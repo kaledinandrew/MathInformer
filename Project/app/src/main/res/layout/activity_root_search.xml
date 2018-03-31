@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.andrey.mathinformer.Programs.RootSearch">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/input_root_search_A"
+            android:layout_width="30sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/programs.roots.A"
+            android:textSize="25sp"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/programs.roots.text1"
+            android:textSize="25sp"
+            android:textAlignment="center"/>
+        <EditText
+            android:id="@+id/input_root_search_B"
+            android:layout_width="30sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/programs.roots.B"
+            android:textSize="25sp"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/programs.roots.text2"
+            android:textSize="25sp"
+            android:textAlignment="center"/>
+        <EditText
+            android:id="@+id/input_root_search_C"
+            android:layout_width="30sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/programs.roots.C"
+            android:textSize="25sp"
+            android:textAlignment="center" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/programs.roots.text3"
+            android:textSize="25sp"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_root_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="find_root"
+        android:text="@string/programs.roots.button"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/text_root_search_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/programs.roots.result"
+        android:gravity="start"
+        android:textSize="30sp"/>
+
+</LinearLayout>

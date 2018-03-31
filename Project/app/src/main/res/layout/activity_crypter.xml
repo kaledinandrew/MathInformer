@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.andrey.mathinformer.Programs.Crypter">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/programs.crypter.title"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_key_crypter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/programs.crypter.input.key"
+            android:inputType="time"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="@string/programs.crypter.text1"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/input_text_crypter"
+            android:layout_width="200sp"
+            android:layout_height="match_parent"
+            android:hint="@string/programs.crypter.input.text"
+            android:inputType="textMultiLine"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button_encrypting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/programs.crypter.button_encrypt"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/button_decrypting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/programs.crypter.button_decrypt"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_crypting_result"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:gravity="center"
+        android:text="@string/programs.crypter.result"
+        android:textIsSelectable="true"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button_crypter_exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/programs.crypter.button_exit"
+        android:textSize="25sp" />
+
+</LinearLayout>
