@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.andrey.mathinformer.Programs.Calculator">
+
+    <TextView
+        android:id="@+id/text_hello_world1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/programs.calculator.title"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/input1_calculator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="@string/programs.calculator.input"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textSize="25sp" />
+
+            <RadioGroup
+                android:id="@+id/rg_operations"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/addition"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/programs.calculator.addition"
+                    android:textSize="25sp" />
+
+                <RadioButton
+                    android:id="@+id/subtraction"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/programs.calculator.subtraction"
+                    android:textSize="25sp" />
+
+                <RadioButton
+                    android:id="@+id/multiplication"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/programs.calculator.multiplication"
+                    android:textSize="25sp" />
+
+                <RadioButton
+                    android:id="@+id/dividing"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/programs.calculator.dividing"
+                    android:textSize="25sp" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/input2_calculator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="@string/programs.calculator.input"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/programs.calculator.equality"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/text_calculating_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/programs.calculator.result"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button_calculation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/programs.calculator.calculate"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/button_calculator_exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/programs.calculator.exit"
+        android:textSize="25sp" />
+
+
+</LinearLayout>

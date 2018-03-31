@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name">MathInformer</string>
+
+    <string name="main.ege">ЕГЭ</string>
+    <string name="main.theory">Теория по программированию</string>
+    <string name="main.tests">Тесты</string>
+    <string name="main.useful_programs">Полезные программы</string>
+    <string name="main.about_the_program">О программе</string>
+
+    <string name="theory.title">Теория</string>
+    <string name="theory.1">Введение</string>
+    <string name="theory.2">Типы данных</string>
+    <string name="theory.3">Операторы</string>
+    <string name="theory.4">Строки. Легендарный \"Hello World!\"</string>
+    <string name="theory.5">Простейшая арифметика</string>
+    <string name="theory.6">Условные выражения и конструкции</string>
+    <string name="theory.7">Цикл for</string>
+    <string name="theory.8">Цикл с пред- и постусловием</string>
+    <string name="theory.9">Массивы</string>
+    <string name="theory.10">Сортировка массива</string>
+    <string name="theory.11">Матрицы</string>
+    <string name="theory.12">Массивы массивов</string>
+    <string name="theory.13">Методы</string>
+    <string name="theory.14">Перегрузка методов</string>
+    <string name="theory.15">Рекурсия</string>
+
+    <string name="programs.empty">Некоторые поля пусты</string>
+    <string name="programs.calculator">Калькулятор</string>
+    <string name="programs.crypter">Шифровальщик</string>
+    <string name="programs.converter">Перевод систем счисления</string>
+    <string name="programs.rootSearch">Поиск корней</string>
+
+    <string name="programs.converter.edit1">Из:(до 36)</string>
+    <string name="programs.converter.edit2">В:(до 36)</string>
+    <string name="programs.converter.edit3">Введите число для перевода: </string>
+    <string name="programs.converter.button">Перевести</string>
+
+    <string name="programs.calculator.title">Простой калькулятор</string>
+    <string name="programs.calculator.input">Число</string>
+    <string name="programs.calculator.addition">+ </string>
+    <string name="programs.calculator.subtraction">- </string>
+    <string name="programs.calculator.multiplication">* </string>
+    <string name="programs.calculator.dividing">/ </string>
+    <string name="programs.calculator.equality"> = </string>
+    <string name="programs.calculator.result">Результат</string>
+    <string name="programs.calculator.calculate">Вычислить</string>
+    <string name="programs.calculator.exit">Выход</string>
+    <string name="programs.calculator.dividing_0">Деление на 0</string>
+    <string name="programs.calculator.error">Ошибка</string>
+
+    <string name="programs.roots.A">A</string>
+    <string name="programs.roots.B">B</string>
+    <string name="programs.roots.C">C</string>
+    <string name="programs.roots.text1">x^2 + </string>
+    <string name="programs.roots.text2">*x + </string>
+    <string name="programs.roots.text3"> = 0</string>
+    <string name="programs.roots.button">Вычислить</string>
+    <string name="programs.roots.result">Результат</string>
+
+    <string name="programs.crypter.title">Шифровальщик</string>
+    <string name="programs.crypter.input.key">Ключ: </string>
+    <string name="programs.crypter.input.text">Введите текст: </string>
+    <string name="programs.crypter.text1">Вид ключа: \n 43:5:12</string>
+    <string name="programs.crypter.result">Результат</string>
+    <string name="programs.crypter.button_encrypt">Зашифровать</string>
+    <string name="programs.crypter.button_decrypt">Расшифровать</string>
+    <string name="programs.crypter.button_exit">Выход</string>
+
+
+    <string name="ege.title">Подготовка к ЕГЭ</string>
+    <string name="ege.1">1. Перевод систем счисления</string>
+    <string name="ege.2">2. Таблицы истинности</string>
+    <string name="ege.3">3. Анализ таблиц</string>
+    <string name="ege.4">4. Базы данных</string>
+    <string name="ege.5">5. Кодирование букв и слов</string>
+    <string name="ege.6">6. Анализ/построение алгоритмов</string>
+    <string name="ege.7">7. Диаграммы и Exсel</string>
+    <string name="ege.8">8. Анализ кода</string>
+    <string name="ege.9">9. Запись и передача файлов</string>
+    <string name="ege.10">10. Комбинаторика/Перебор слов</string>
+    <string name="ege.11">11. Рекурсия</string>
+    <string name="ege.12">12. Структура сетей</string>
+    <string name="ege.13">13. Количество информации</string>
+    <string name="ege.14">14. Исполнитель Робот</string>
+    <string name="ege.15">15. Пути в графе</string>
+    <string name="ege.16">16. Системы счисления</string>
+    <string name="ege.17">17. Множества</string>
+    <string name="ege.18">18. Логические выражения</string>
+    <string name="ege.19">19. Анализ кода, изменяющего массив</string>
+    <string name="ege.20">20. Программы с циклами и условиями</string>
+    <string name="ege.21">21. Анализ кода с подпрограммами</string>
+    <string name="ege.22">22. ДП/Анализ кода</string>
+    <string name="ege.23">23. Логические уравнения</string>
+    <string name="ege.24">24(С1). Ошибки в коде</string>
+    <string name="ege.25">25(С2). Обработка массива</string>
+    <string name="ege.26">26(С3). Выигрышные стратегии</string>
+    <string name="ege.27">27(С4). Программирование</string>
+
+
+    <string name="about">Здесь будет текст о программе</string>
+</resources>
