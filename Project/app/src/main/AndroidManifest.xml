@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.andrey.mathinformer">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_2"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_2"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainPage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TheoryPage" />
+        <activity android:name=".TestPage" />
+        <activity android:name=".AboutPage" />
+        <activity android:name=".ProgramsPage" />
+        <activity android:name=".Programs.Calculator" />
+        <activity android:name=".Programs.ConverterNumeration" />
+        <activity android:name=".Programs.Crypter" />
+        <activity android:name=".Programs.RootSearch" />
+        <activity android:name=".EgePage"></activity>
+    </application>
+
+</manifest>
