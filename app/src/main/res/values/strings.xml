@@ -65,7 +65,9 @@
     <string name="programs.crypter.button_encrypt">Зашифровать</string>
     <string name="programs.crypter.button_decrypt">Расшифровать</string>
     <string name="programs.crypter.button_exit">Выход</string>
-
+    <string name="programs.crypter.title_instruction">Пояснения</string>
+    <string name="programs.crypter.text_instruction">Данная программа кодирует текст по следующему алгоритму: \n1) Переводим каждый символ в число, которому он соответствует в таблице кодировок; \n2) Увеличиваем каждое число на величину, получаемую из ключа; \n3) Переводим число обратно в символ, при помощи таблицы кодировок. \n\nДля расшифровки используется тот же алгоритм, но коды символов не увеличиваются, а уменьшаются. \n</string>
+    <string name="programs.crypter.example">Пример: \nВозьмем слово \"Апрель\" и ключ 5:11:3 \n1) В таблице находим следующие соответствия: \nА = 225, п = 208, р = 210, е = 197, л = 204, ь = 216 \n2) В соответствии со значениями ключа изменяем полученные числа: \n225 + 5 = 230; 208 + 11 = 219; 210 + 3 = 213; 197 + 5 = 202; 204 + 11 = 215; 216 + 3 = 219 \n3)Переводим новые числа в символы: \n230 = Е; 219 = ъ; 213 = у; 202 = к; 215 = ц; 219 = я \nПолучаем слово \"Еъукця\" \n</string>
 
     <string name="ege.title">Подготовка к ЕГЭ</string>
     <string name="ege.1">1. Перевод систем счисления</string>
@@ -95,6 +97,176 @@
     <string name="ege.25">25(С2). Обработка массива</string>
     <string name="ege.26">26(С3). Выигрышные стратегии</string>
     <string name="ege.27">27(С4). Программирование</string>
+
+
+    <string name="tests.levels.easy">Простой</string>
+    <string name="tests.levels.middle">Средний</string>
+    <string name="tests.levels.hard">Сложный</string>
+    <string name="tests.levels.god">Бог</string>
+    <string name="tests.check">Проверить ответы</string>
+
+    <string name="easy.title">Простой уровень</string>
+    <string name="easy.q1">Вопрос 1. Что такое тип double?</string>
+    <string name="easy.q1.v1">8-битное целое число</string>
+    <string name="easy.q1.v2">32-битное целое число</string>
+    <string name="easy.q1.v3">64-битное число с плавающей запятой</string>
+    <string name="easy.q1.v4">32-битное число с плавающей запятой</string>
+    <string name="easy.q2">Вопрос 2. Что выведет функция Console.WriteLine(34 + 2)?</string>
+    <string name="easy.q2.v1">(34 + 2)</string>
+    <string name="easy.q2.v2">34 + 2</string>
+    <string name="easy.q2.v3">36</string>
+    <string name="easy.q2.v4">Line(34 + 2)</string>
+    <string name="easy.q3">Вопрос 3. Что выведет функция Console.WriteLine(\"34\" + \"2\")?</string>
+    <string name="easy.q3.v1">(\"34\" + \"2\")</string>
+    <string name="easy.q3.v2">34 + 2</string>
+    <string name="easy.q3.v3">36</string>
+    <string name="easy.q3.v4">342</string>
+    <string name="easy.q4">Вопрос 4. Что будет выведено в результате работы команды: Console.WriteLine(\"Привет,\" + \"друг\")?</string>
+    <string name="easy.q4.v1">Привет, друг</string>
+    <string name="easy.q4.v2">Привет,друг</string>
+    <string name="easy.q4.v3">\"Привет,\" + \"друг\"</string>
+    <string name="easy.q4.v4">(\"Привет,\" + \"друг\")</string>
+    <string name="easy.q5">Вопрос 5. В чем разница между командами Console.Write() и Console.WriteLine()?</string>
+    <string name="easy.q5.v1">Console.WriteLine() в конце переносит курсор на новую строку</string>
+    <string name="easy.q5.v2">Console.Write() в конце переносит курсор на новую строку</string>
+    <string name="easy.q5.v3">Разницы нет, Console.Write() просто появилась позже</string>
+    <string name="easy.q5.v4">Команда Console.Write() вызывает ошибку</string>
+    <string name="easy.q6">Вопрос 6. Чему равна переменная y после выполнения алгоритма?</string>
+    <string name="easy.code1">" "int x = 56; \n x--; \n int y = x % 10; \n y += 2; </string>
+    <string name="easy.q6.v1">5</string>
+    <string name="easy.q6.v2">7</string>
+    <string name="easy.q6.v3">6</string>
+    <string name="easy.q6.v4">62</string>
+    <string name="easy.q7">Вопрос 7. Что будет выведено в результате работы команды: Console.WriteLine(3467 / 10 % 10)?</string>
+    <string name="easy.q7.v1">6</string>
+    <string name="easy.q7.v2">3467</string>
+    <string name="easy.q7.v3">7</string>
+    <string name="easy.q7.v4">346</string>
+
+    <string name="middle.title">Средний уровень</string>
+    <string name="middle.q1"><b>Вопрос 1</b>. Что будет выведено в результате работы следующей части программы:</string>
+    <string name="middle.code1">" "int g = 2; \n if (g > 3) { \n "  "if (g > 8) Console.WriteLine(32); \n "  "else Console.WriteLine(58); \n } \n else{ \n "  "if (g > 8) Console.WriteLine(43); \n "  "else Console.WriteLine(98); \n }
+    </string>
+    <string name="middle.q1.v1">43</string>
+    <string name="middle.q1.v2">98</string>
+    <string name="middle.q1.v3">58</string>
+    <string name="middle.q1.v4">32</string>
+
+    <string name="middle.q2">Вопрос 2. Что будет выведено в результате работы следующей части программы:</string>
+    <string name="middle.code2">" "int k = 9; \n switch (k) { \n "  "case (9/2): \n "    "Console.Write("1"); break; \n "  "case (10/5): \n "    "Console.Write("2"); break; \n "  "case (29/3): \n "    "Console.Write("3"); break; \n "  "default: \n "    "Console.Write("4"); break; \n }</string>
+    <string name="middle.q2.v1">1</string>
+    <string name="middle.q2.v2">2</string>
+    <string name="middle.q2.v3">3</string>
+    <string name="middle.q2.v4">4</string>
+
+    <string name="middle.q3">Вопрос 3. Что будет выведено в результате работы следующей части программы:</string>
+    <string name="middle.code3">" "int k = 5, g = 1; \n for (int i = 0; i != k; i++){ \n "  "g += 5; \n "  "g /= 2; \n } \n Console.WriteLine(g);</string>
+    <string name="middle.q3.v1">4</string>
+    <string name="middle.q3.v2">5</string>
+    <string name="middle.q3.v3">9</string>
+    <string name="middle.q3.v4">6</string>
+
+    <string name="middle.q4">Вопрос 4. Отметьте цикл с постусловием:</string>
+    <string name="middle.q4.v1">for(){}</string>
+    <string name="middle.q4.v2">while(){}</string>
+    <string name="middle.q4.v3">do{} while();</string>
+    <string name="middle.q4.v4">Ни один из них</string>
+
+    <string name="middle.q5">Вопрос 5. Можно ли написать замену цикла с постусловием? (… - условие выхода из цикла)</string>
+    <string name="middle.q5.v1">while(True){if(…){continue;}}</string>
+    <string name="middle.q5.v2">Нельзя</string>
+    <string name="middle.q5.v3">while(True){if(…){break;}}</string>
+    <string name="middle.q5.v4">while(…){break;}</string>
+
+    <string name="middle.q6"><![CDATA[Вопрос 6. Есть ли различия между List <int> и int[]?]]></string>
+    <string name="middle.q6.v1">int[] - динамический массив, List - константно заданный</string>
+    <string name="middle.q6.v2">List - динамический массив, int[] - константно заданный</string>
+    <string name="middle.q6.v3">Различий нет</string>
+    <string name="middle.q6.v4">int[] для новичков, List для продвинутых программистов</string>
+
+    <string name="middle.q7">Вопрос 7. Как может быть задан массив?</string>
+    <string name="middle.q7.v1">int[] a = {2, 4, 5, 89};</string>
+    <string name="middle.q7.v2">int[] a = new int[{2, 4, 5, 89}];</string>
+    <string name="middle.q7.v3">int[] a = new int[2, 4, 5, 89];</string>
+    <string name="middle.q7.v4">int[] a = [2, 4, 5, 89];</string>
+
+    <string name="middle.q8">Вопрос 8. Как может быть задан List?</string>
+    <string name="middle.q8.v1"><![CDATA[List<int> a = {2, 4, 78, 9};]]></string>
+    <string name="middle.q8.v2"><![CDATA[List<int> a = new List<int>(){2, 4, 78, 9};]]></string>
+    <string name="middle.q8.v3"><![CDATA[List<int> a = [2, 4, 78, 9];]]></string>
+    <string name="middle.q8.v4"><![CDATA[List<int> a = new List<int>()[2, 4, 78, 9];]]></string>
+
+    <string name="middle.q9">Вопрос 9. Какая команда позволяет узнать длину List a?</string>
+    <string name="middle.q9.v1">len(a)</string>
+    <string name="middle.q9.v2">a.Length</string>
+    <string name="middle.q9.v3">a.size</string>
+    <string name="middle.q9.v4">a.Count</string>
+
+    <string name="middle.q10">Вопрос 10. Выберите верную конструкцию, если она присутствует среди предложенных:</string>
+    <string name="middle.code10"><![CDATA[List<int> a = new List<int>(){ 2, 4, 78, 9 };]]></string>
+    <string name="middle.q10.v1">foreach(int i in a){ Console.Write(i + \" \"); }</string>
+    <string name="middle.q10.v2">Ни одну из конструкций использовать нельзя</string>
+    <string name="middle.q10.v3">foreach(int i in a){ Console.Write(a[i] + \" \"); }</string>
+    <string name="middle.q10.v4">foreach(i in a){ Console.Write(i + \" \"); }</string>
+
+
+    <string name="hard.title">Сложный уровень</string>
+    <string name="hard.q1">Вопрос 1. Какой тип возвращемого значения у данной функции:</string>
+    <string name="hard.code1">" "public static int repeater(int t){ \n "  "return t;\n }
+    </string>
+    <string name="hard.q1.v1">public</string>
+    <string name="hard.q1.v2">static</string>
+    <string name="hard.q1.v3">int</string>
+    <string name="hard.q1.v4">repeater</string>
+
+    <string name="hard.q2">Вопрос 2. Какой из видов сортировки существует:</string>
+    <string name="hard.q2.v1">\"баночкой\"</string>
+    <string name="hard.q2.v2">\"стаканчиком\"</string>
+    <string name="hard.q2.v3">\"вилочкой\"</string>
+    <string name="hard.q2.v4">\"пузырьком\"</string>
+
+    <string name="hard.q3">Вопрос 3. В чем разница между int[][] и int[,]?</string>
+    <string name="hard.q3.v1">Разницы нет</string>
+    <string name="hard.q3.v2">int[][] - массив массивов, int[,] - матрица</string>
+    <string name="hard.q3.v3">int[][] - матрица, int[,] - массив массивов</string>
+    <string name="hard.q3.v4">int[,] вызывает ошибку</string>
+
+    <string name="hard.q4">Вопрос 4. Перегруженные методы - это:</string>
+    <string name="hard.q4.v1">методы, которые не справляются:(</string>
+    <string name="hard.q4.v2">методы с одинаковыми названиями и аргументами</string>
+    <string name="hard.q4.v3">методы с одинаковыми названиями и разными аргументами</string>
+    <string name="hard.q4.v4">методы с разными названиями и одинаковыми аргументами</string>
+
+    <string name="hard.q5">Вопрос 5. Рекурсия - это:</string>
+    <string name="hard.q5.v1">метод, который не имеет типа возвращаемого значения</string>
+    <string name="hard.q5.v2">метод, который вызывает сам себя</string>
+    <string name="hard.q5.v3">пара методов с одинаковыми названиями и разными аргументами</string>
+    <string name="hard.q5.v4">группа методов, которые не имеют тел</string>
+
+    <string name="hard.q6">Вопрос 6. Укажите верное утверждение:</string>
+    <string name="hard.q6.v1">Бинпоиск работает только в отсортированном массиве</string>
+    <string name="hard.q6.v2">Бинпоиск работает только в неотсортированном массиве</string>
+    <string name="hard.q6.v3">Бинпоиск работает как в отсортированном, так и в неотсортированном массиве</string>
+    <string name="hard.q6.v4">Бинпоиск не работает с массивами</string>
+
+    <string name="hard.q7">Вопрос 7. Расположите сортировки в порядке увеличения сложности их работы:</string>
+    <string name="hard.q7.v1">BogoSort, GnomeSort, IntroSort</string>
+    <string name="hard.q7.v2">IntroSort, GnomeSort, BogoSort</string>
+    <string name="hard.q7.v3">BogoSort, IntroSort, GnomeSort</string>
+    <string name="hard.q7.v4">GnomeSort, IntroSort, BogoSort</string>
+
+    <string name="hard.q8">Вопрос 8. Укажите линейную сложность работы алгоритма по времени:</string>
+    <string name="hard.q8.v1">O(n*n)</string>
+    <string name="hard.q8.v2">O(n*log n)</string>
+    <string name="hard.q8.v3">O(1)</string>
+    <string name="hard.q8.v4">O(n)</string>
+
+    <string name="hard.q9">Вопрос 9. Укажите какая строчка пропущена на месте (...) в алгоритме подсчета суммы чисел на главной диагонали (в конце result == 15):</string>
+    <string name="hard.code9"><![CDATA[" "int result = 0; \n int[,] a = { {1, 2, 1}, {4, 5, 4}, {7, 8, 9} }; \n for (int i = 0; i < a.Length; i++) { \n "  "for (int j = 0; j < a.Length; j++) { \n "    "(...) \n "  "} \n } \n Console.WriteLine(result);]]></string>
+    <string name="hard.q9.v1">if (i != j) { result += a[i, j]; }</string>
+    <string name="hard.q9.v2">if (i == 3 - j) { result += a[i, j]; }</string>
+    <string name="hard.q9.v3">if (i == j) { result += a[i, j]; }</string>
+    <string name="hard.q9.v4">if (i == 3 - 1 - j) { result += a[i, j]; }</string>
 
 
     <string name="about">Здесь будет текст о программе</string>

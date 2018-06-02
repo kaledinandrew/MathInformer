@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.andrey.mathinformer.Programs.Calculator;
 import com.example.andrey.mathinformer.Programs.ConverterNumeration;
 import com.example.andrey.mathinformer.Programs.Crypter;
 import com.example.andrey.mathinformer.Programs.RootSearch;
@@ -19,8 +18,6 @@ public class ProgramsPage extends AppCompatActivity {
         setContentView(R.layout.activity_programs_page);
 
         // go to other activities
-        Button button_go_to_calculator = findViewById(R.id.go_to_calculator);
-        button_go_to_calculator.setOnClickListener(onClickListener_go_to_other_activity);
 
         Button button_go_to_crypter = findViewById(R.id.go_to_crypter);
         button_go_to_crypter.setOnClickListener(onClickListener_go_to_other_activity);
@@ -36,10 +33,6 @@ public class ProgramsPage extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             switch (v.getId()){
-                case R.id.go_to_calculator:
-                    Intent intent_calculator = new Intent(ProgramsPage.this, Calculator.class);
-                    startActivity(intent_calculator);
-                    break;
                 case R.id.go_to_crypter:
                     Intent intent_crypter = new Intent(ProgramsPage.this, Crypter.class);
                     startActivity(intent_crypter);

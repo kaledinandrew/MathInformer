@@ -15,122 +15,56 @@
         android:text="@string/main.tests"
         android:textSize="30sp" />
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="horizontal">
 
-        <LinearLayout
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/button_to_easy"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/tests.levels.easy"
+            android:textSize="20sp"/>
 
-            <Button
-                android:id="@+id/button_theory_to_1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/theory.1"
-                android:textSize="20sp"/>
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/button_to_middle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/tests.levels.middle"
+            android:textSize="20sp"/>
 
-            <Button
-                android:id="@+id/button_theory_to_2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/theory.2"
-                android:textSize="20sp"/>
+    </LinearLayout>
 
-            <Button
-                android:id="@+id/button_theory_to_3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/theory.3"
-                android:textSize="20sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/button_theory_to_4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/theory.4"
-                android:textSize="20sp"/>
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/button_to_hard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/tests.levels.hard"
+            android:textSize="20sp"/>
 
-            <Button
-                android:id="@+id/button_theory_to_5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/theory.5"
-                android:textSize="20sp"/>
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/button_to_god"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/tests.levels.god"
+            android:textSize="20sp"/>
 
-            <Button
-                android:id="@+id/button_theory_to_6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/theory.6"
-                android:textSize="20sp"/>
-
-            <Button
-                android:id="@+id/button_theory_to_7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/theory.7"
-                android:textSize="20sp"/>
-
-            <Button
-                android:id="@+id/button_theory_to_8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/theory.8"
-                android:textSize="20sp"/>
-
-            <Button
-                android:id="@+id/button_theory_to_9"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/theory.9"
-                android:textSize="20sp"/>
-
-            <Button
-                android:id="@+id/button_theory_to_10"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/theory.10"
-                android:textSize="20sp"/>
-
-            <Button
-                android:id="@+id/button_theory_to_11"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/theory.11"
-                android:textSize="20sp"/>
-
-            <Button
-                android:id="@+id/button_theory_to_12"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/theory.12"
-                android:textSize="20sp"/>
-
-            <Button
-                android:id="@+id/button_theory_to_13"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/theory.13"
-                android:textSize="20sp"/>
-
-            <Button
-                android:id="@+id/button_theory_to_14"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/theory.14"
-                android:textSize="20sp"/>
-
-            <Button
-                android:id="@+id/button_theory_to_15"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/theory.15"
-                android:textSize="20sp"/>
-
-        </LinearLayout>
-
-    </ScrollView>
+    </LinearLayout>
 
 </LinearLayout>

@@ -33,16 +33,7 @@ public class Crypter extends AppCompatActivity {
         button_encrypting.setOnClickListener(onClickListener_crypter);
         button_decrypting.setOnClickListener(onClickListener_crypter);
 
-        Button button_crypter_exit = findViewById(R.id.button_crypter_exit);
-        button_crypter_exit.setOnClickListener(onClickListener_crypter_exit);
     }
-
-    private final View.OnClickListener onClickListener_crypter_exit = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            finish();
-        }
-    };
 
     // Crypter
     public int[] key_to_array(){
