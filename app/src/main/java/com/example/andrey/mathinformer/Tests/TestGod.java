@@ -8,28 +8,31 @@ import android.widget.Toast;
 
 import com.example.andrey.mathinformer.R;
 
-public class TestEasy extends AppCompatActivity {
-    RadioButton rb_q1, rb_q2, rb_q3, rb_q4, rb_q5, rb_q6, rb_q7;
+
+public class TestGod extends AppCompatActivity {
+
+    RadioButton rb_q1, rb_q2, rb_q3, rb_q4, rb_q5, rb_q6, rb_q7, rb_q8;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_test_easy);
+        setContentView(R.layout.activity_test_god);
 
-        rb_q1 = findViewById(R.id.easy_rb1);
-        rb_q2 = findViewById(R.id.easy_rb2);
-        rb_q3 = findViewById(R.id.easy_rb3);
-        rb_q4 = findViewById(R.id.easy_rb4);
-        rb_q5 = findViewById(R.id.easy_rb5);
-        rb_q6 = findViewById(R.id.easy_rb6);
-        rb_q7 = findViewById(R.id.easy_rb7);
+        rb_q1 = findViewById(R.id.god_rb1);
+        rb_q2 = findViewById(R.id.god_rb2);
+        rb_q3 = findViewById(R.id.god_rb3);
+        rb_q4 = findViewById(R.id.god_rb4);
+        rb_q5 = findViewById(R.id.god_rb5);
+        rb_q6 = findViewById(R.id.god_rb6);
+        rb_q7 = findViewById(R.id.god_rb7);
+        rb_q8 = findViewById(R.id.god_rb8);
     }
 
     public void showResult(View view){
         int result = score();
-        String message = "Результат: " + result + "/7\n";
+        String message = "Результат: " + result + "/8\n";
 
-        if (result > 4){
+        if (result > 5){
             Toast toast = Toast.makeText(getApplicationContext(),
                     message + "Поздравляю! Отличный результат!", Toast.LENGTH_LONG);
             toast.show();
@@ -41,7 +44,7 @@ public class TestEasy extends AppCompatActivity {
         }
     }
 
-    public int score(){
+    private int score(){
         int score = 0;
 
         if (rb_q1.isChecked()) score++;
@@ -51,12 +54,13 @@ public class TestEasy extends AppCompatActivity {
         if (rb_q5.isChecked()) score++;
         if (rb_q6.isChecked()) score++;
         if (rb_q7.isChecked()) score++;
+        if (rb_q8.isChecked()) score++;
 
         return score;
     }
 
     public void WrongAnswers(View view){
-        if (score() == 7) {
+        if (score() == 8) {
             Toast toast = Toast.makeText(getApplicationContext(),
                     "Все ответы верны", Toast.LENGTH_LONG);
             toast.show();
@@ -67,6 +71,7 @@ public class TestEasy extends AppCompatActivity {
             toast.show();
         }
     }
+
     private String WrongNumbers(){
         String answers = "";
         if (!rb_q1.isChecked()) answers += " 1";
@@ -76,6 +81,7 @@ public class TestEasy extends AppCompatActivity {
         if (!rb_q5.isChecked()) answers += " 5";
         if (!rb_q6.isChecked()) answers += " 6";
         if (!rb_q7.isChecked()) answers += " 7";
+        if (!rb_q8.isChecked()) answers += " 8";
 
         return answers;
     }

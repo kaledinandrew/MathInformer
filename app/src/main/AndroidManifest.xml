@@ -43,7 +43,8 @@
         <activity android:name=".TheoryStructure" />
         <activity android:name=".Tests.TestEasy" />
         <activity android:name=".Tests.TestMiddle" />
-        <activity android:name=".Tests.TestHard"></activity>
+        <activity android:name=".Tests.TestHard" />
+        <activity android:name=".Tests.TestGod"></activity>
     </application>
 
 </manifest>

@@ -7,12 +7,11 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.andrey.mathinformer.Tests.TestEasy;
+import com.example.andrey.mathinformer.Tests.TestGod;
 import com.example.andrey.mathinformer.Tests.TestHard;
 import com.example.andrey.mathinformer.Tests.TestMiddle;
 
 public class TestPage extends AppCompatActivity {
-
-    private String[] themes = new String[15];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,33 +48,11 @@ public class TestPage extends AppCompatActivity {
                     Intent intent_to_hard = new Intent(TestPage.this, TestHard.class);
                     startActivity(intent_to_hard);
                     break;
-                /*
                 case R.id.button_to_god:
-                    Intent intent_to_god = new Intent(TestPage.this, ProgramsPage.class);
+                    Intent intent_to_god = new Intent(TestPage.this, TestGod.class);
                     startActivity(intent_to_god);
                     break;
-                */
             }
         }
     };
-
-    private String[] set_strings(String[] themes){
-        themes[0] = "Введение";
-        themes[1] = "Типы данных";
-        themes[2] = "Операторы";
-        themes[3] = "Строки. Легендарный \"Hello World!\"";
-        themes[4] = "Простейшая арифметика";
-        themes[5] = "Условные выражения и конструкции";
-        themes[6] = "Цикл for";
-        themes[7] = "Цикл с пред- и постусловием";
-        themes[8] = "Массивы";
-        themes[9] = "Сортировка массива";
-        themes[10] = "Матрицы";
-        themes[11] = "Массивы массивов";
-        themes[12] = "Методы";
-        themes[13] = "Перегрузка методов";
-        themes[14] = "Рекурсия";
-
-        return themes;
-    }
 }

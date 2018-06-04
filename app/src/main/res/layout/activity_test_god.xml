@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout 
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.andrey.mathinformer.Tests.TestMiddle">
+    tools:context="com.example.andrey.mathinformer.Tests.TestGod">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/middle.title"
+        android:text="@string/god.title"
         android:gravity="center"
         android:textSize="25sp"/>
 
@@ -27,40 +26,35 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/middle.q1"
+                android:text="@string/god.q1"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:textSize="20sp"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/middle.code1"
-                android:textSize="20sp"/>
 
             <RadioGroup
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/middle.q1.v1"
-                    android:textSize="20sp"/>
-                <RadioButton
-                    android:id="@+id/middle_rb1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/middle.q1.v2"
+                    android:text="@string/god.q1.v1"
                     android:textSize="20sp"/>
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/middle.q1.v3"
+                    android:text="@string/god.q1.v2"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:id="@+id/god_rb1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/god.q1.v3"
                     android:textSize="20sp"/>
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/middle.q1.v4"
+                    android:text="@string/god.q1.v4"
                     android:textSize="20sp"/>
             </RadioGroup>
             <TextView
@@ -74,14 +68,15 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/middle.q2"
+                android:text="@string/god.q2"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:textSize="20sp"/>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/middle.code2"
+                android:text="@string/god.code2"
                 android:textSize="20sp"/>
 
             <RadioGroup
@@ -91,23 +86,23 @@
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/middle.q2.v1"
+                    android:text="@string/god.q2.v1"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:id="@+id/god_rb2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/god.q2.v2"
                     android:textSize="20sp"/>
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/middle.q2.v2"
-                    android:textSize="20sp"/>
-                <RadioButton
-                    android:id="@+id/middle_rb2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/middle.q2.v3"
+                    android:text="@string/god.q2.v3"
                     android:textSize="20sp"/>
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/middle.q2.v4"
+                    android:text="@string/god.q2.v4"
                     android:textSize="20sp"/>
             </RadioGroup>
             <TextView
@@ -121,14 +116,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/middle.q3"
+                android:text="@string/god.q3"
                 android:gravity="center"
                 android:textStyle="bold"
-                android:textSize="20sp"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/middle.code3"
                 android:textSize="20sp"/>
 
             <RadioGroup
@@ -136,25 +126,25 @@
                 android:layout_height="wrap_content">
 
                 <RadioButton
-                    android:id="@+id/middle_rb3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/middle.q3.v1"
+                    android:text="@string/god.q3.v1"
                     android:textSize="20sp"/>
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/middle.q3.v2"
+                    android:text="@string/god.q3.v2"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:id="@+id/god_rb3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/god.q3.v3"
                     android:textSize="20sp"/>
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/middle.q3.v3"
-                    android:textSize="20sp"/>
-                <RadioButton
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/middle.q3.v4"
+                    android:text="@string/god.q3.v4"
                     android:textSize="20sp"/>
             </RadioGroup>
             <TextView
@@ -168,9 +158,15 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/middle.q4"
+                android:text="@string/god.q4"
                 android:gravity="center"
                 android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/god.code4"
                 android:textSize="20sp"/>
 
             <RadioGroup
@@ -178,25 +174,25 @@
                 android:layout_height="wrap_content">
 
                 <RadioButton
+                    android:id="@+id/god_rb4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/middle.q4.v1"
+                    android:text="@string/god.q4.v1"
                     android:textSize="20sp"/>
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/middle.q4.v2"
-                    android:textSize="20sp"/>
-                <RadioButton
-                    android:id="@+id/middle_rb4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/middle.q4.v3"
+                    android:text="@string/god.q4.v2"
                     android:textSize="20sp"/>
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/middle.q4.v4"
+                    android:text="@string/god.q4.v3"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/god.q4.v4"
                     android:textSize="20sp"/>
             </RadioGroup>
             <TextView
@@ -210,7 +206,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/middle.q5"
+                android:text="@string/god.q5"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:textSize="20sp"/>
@@ -222,23 +218,23 @@
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/middle.q5.v1"
+                    android:text="@string/god.q5.v1"
                     android:textSize="20sp"/>
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/middle.q5.v2"
-                    android:textSize="20sp"/>
-                <RadioButton
-                    android:id="@+id/middle_rb5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/middle.q5.v3"
+                    android:text="@string/god.q5.v2"
                     android:textSize="20sp"/>
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/middle.q5.v4"
+                    android:text="@string/god.q5.v3"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:id="@+id/god_rb5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/god.q5.v4"
                     android:textSize="20sp"/>
             </RadioGroup>
             <TextView
@@ -248,11 +244,51 @@
                 android:textSize="25sp"/>
 
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/god.q6"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/god_rb6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/god.q6.v1"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/god.q6.v2"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/god.q6.v3"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/god.q6.v4"
+                    android:textSize="20sp"/>
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="25sp"/>
+
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/middle.q6"
+                android:text="@string/god.q7"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:textSize="20sp"/>
@@ -264,23 +300,23 @@
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/middle.q6.v1"
+                    android:text="@string/god.q7.v1"
                     android:textSize="20sp"/>
                 <RadioButton
-                    android:id="@+id/middle_rb6"
+                    android:id="@+id/god_rb7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/middle.q6.v2"
-                    android:textSize="20sp"/>
-                <RadioButton
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/middle.q6.v3"
+                    android:text="@string/god.q7.v2"
                     android:textSize="20sp"/>
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/middle.q6.v4"
+                    android:text="@string/god.q7.v3"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/god.q7.v4"
                     android:textSize="20sp"/>
             </RadioGroup>
             <TextView
@@ -290,11 +326,10 @@
                 android:textSize="25sp"/>
 
 
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/middle.q7"
+                android:text="@string/god.q8"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:textSize="20sp"/>
@@ -304,25 +339,20 @@
                 android:layout_height="wrap_content">
 
                 <RadioButton
-                    android:id="@+id/middle_rb7"
+                    android:id="@+id/god_rb8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/middle.q7.v1"
+                    android:text="@string/god.q8.v1"
                     android:textSize="20sp"/>
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/middle.q7.v2"
+                    android:text="@string/god.q8.v2"
                     android:textSize="20sp"/>
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/middle.q7.v3"
-                    android:textSize="20sp"/>
-                <RadioButton
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/middle.q7.v4"
+                    android:text="@string/god.q8.v3"
                     android:textSize="20sp"/>
             </RadioGroup>
             <TextView
@@ -330,138 +360,6 @@
                 android:layout_height="wrap_content"
                 android:text=""
                 android:textSize="25sp"/>
-
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/middle.q8"
-                android:gravity="center"
-                android:textStyle="bold"
-                android:textSize="20sp"/>
-
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <RadioButton
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/middle.q8.v1"
-                    android:textSize="20sp"/>
-                <RadioButton
-                    android:id="@+id/middle_rb8"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/middle.q8.v2"
-                    android:textSize="20sp"/>
-                <RadioButton
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/middle.q8.v3"
-                    android:textSize="20sp"/>
-                <RadioButton
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/middle.q8.v4"
-                    android:textSize="20sp"/>
-            </RadioGroup>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text=""
-                android:textSize="25sp"/>
-
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/middle.q9"
-                android:gravity="center"
-                android:textStyle="bold"
-                android:textSize="20sp"/>
-
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <RadioButton
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/middle.q9.v1"
-                    android:textSize="20sp"/>
-                <RadioButton
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/middle.q9.v2"
-                    android:textSize="20sp"/>
-                <RadioButton
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/middle.q9.v3"
-                    android:textSize="20sp"/>
-                <RadioButton
-                    android:id="@+id/middle_rb9"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/middle.q9.v4"
-                    android:textSize="20sp"/>
-            </RadioGroup>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text=""
-                android:textSize="25sp"/>
-
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/middle.q10"
-                android:gravity="center"
-                android:textStyle="bold"
-                android:textSize="20sp"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/middle.code10"
-                android:textSize="20sp"/>
-
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <RadioButton
-                    android:id="@+id/middle_rb10"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/middle.q10.v1"
-                    android:textSize="20sp"/>
-                <RadioButton
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/middle.q10.v2"
-                    android:textSize="20sp"/>
-                <RadioButton
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/middle.q10.v3"
-                    android:textSize="20sp"/>
-                <RadioButton
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/middle.q10.v4"
-                    android:textSize="20sp"/>
-            </RadioGroup>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text=""
-                android:textSize="25sp"/>
-
 
 
             <Button
@@ -470,7 +368,7 @@
                 android:layout_height="wrap_content"
                 android:onClick="showResult"
                 android:text="@string/tests.check"
-                android:textSize="20sp"/>
+                android:textSize="20sp" />
 
             <Button
                 style="?android:attr/buttonBarButtonStyle"
@@ -480,8 +378,7 @@
                 android:text="@string/tests.showWrong"
                 android:textSize="20sp" />
 
-
         </LinearLayout>
     </ScrollView>
-    
+
 </LinearLayout>

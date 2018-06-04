@@ -99,11 +99,12 @@
     <string name="ege.27">27(С4). Программирование</string>
 
 
-    <string name="tests.levels.easy">Простой</string>
-    <string name="tests.levels.middle">Средний</string>
-    <string name="tests.levels.hard">Сложный</string>
-    <string name="tests.levels.god">Бог</string>
+    <string name="tests.levels.easy">Простой уровень</string>
+    <string name="tests.levels.middle">Средний уровень</string>
+    <string name="tests.levels.hard">Сложный уровень</string>
+    <string name="tests.levels.god">Бог программирования</string>
     <string name="tests.check">Проверить ответы</string>
+    <string name="tests.showWrong">Показать неправильные ответы</string>
 
     <string name="easy.title">Простой уровень</string>
     <string name="easy.q1">Вопрос 1. Что такое тип double?</string>
@@ -267,6 +268,57 @@
     <string name="hard.q9.v2">if (i == 3 - j) { result += a[i, j]; }</string>
     <string name="hard.q9.v3">if (i == j) { result += a[i, j]; }</string>
     <string name="hard.q9.v4">if (i == 3 - 1 - j) { result += a[i, j]; }</string>
+
+
+    <string name="god.title">Бог программирования</string>
+    <string name="god.q1">Вопрос 1. Укажите некорректную запись:</string>
+    <string name="god.q1.v1">public class Student {}</string>
+    <string name="god.q1.v2">static class Student {}</string>
+    <string name="god.q1.v3">void class Student {}</string>
+    <string name="god.q1.v4">protected class Student {}</string>
+
+    <string name="god.q2">Вопрос 2. Какой модификатор доступа у поля name класса Student?</string>
+    <string name="god.code2">" "public class Student { \n "  "string name; \n }</string>
+    <string name="god.q2.v1">Невозможно определить</string>
+    <string name="god.q2.v2">private</string>
+    <string name="god.q2.v3">public</string>
+    <string name="god.q2.v4">protected</string>
+
+    <string name="god.q3">Вопрос 3. Выберите верное утверждение:</string>
+    <string name="god.q3.v1">Поля с модификатором private доступны из любой части кода сборки</string>
+    <string name="god.q3.v2">Поля с модификатором public доступны только в том же классе и в производных от него классах</string>
+    <string name="god.q3.v3">Поля с модификатором protected доступны только в том же классе и в производных от него классах</string>
+    <string name="god.q3.v4">Поля с модификатором protected доступны только в том же классе и недоступны в производных от него классах</string>
+
+    <string name="god.q4">Вопрос 4. Какая конструкция должна находиться на месте (...) для заполнения полей класса?</string>
+    <string name="god.code4">" "class Student{ \n "  "string name; \n "  "int age; \n "  "public Student (string name, int age){ \n "    "(...) \n "  "} \n }</string>
+    <string name="god.q4.v1">this.name = name; this.age = age;</string>
+    <string name="god.q4.v2">this->name = name; this->age = age;</string>
+    <string name="god.q4.v3">Ни один из предложенных вариантов</string>
+    <string name="god.q4.v4">name = name; age = age;</string>
+
+    <string name="god.q5">Вопрос 5. Укажите верное положение о конструкторах:</string>
+    <string name="god.q5.v1">Конструктор не может быть с модификатором private</string>
+    <string name="god.q5.v2">Конструктор не может иметь модификатор доступа</string>
+    <string name="god.q5.v3">Конструктор не может быть пустым</string>
+    <string name="god.q5.v4">Конструктор не имеет типа возвращаемого значения</string>
+
+    <string name="god.q6">Вопрос 6. Выберите правильную запись наследования (Parent - класс-родитель, Child - класс-наследник): \n class Parent{}</string>
+    <string name="god.q6.v1">class Child : Parent {}</string>
+    <string name="god.q6.v2">class Parent : Child {}</string>
+    <string name="god.q6.v3">class Child extends Parent {}</string>
+    <string name="god.q6.v4">class Parent extends Child {}</string>
+
+    <string name="god.q7">Вопрос 7. Выберите верное утверждение:</string>
+    <string name="god.q7.v1">Можно создать только один класс, производный от какого-то абстрактного</string>
+    <string name="god.q7.v2">Нельзя создать объект абстрактного класса</string>
+    <string name="god.q7.v3">Нельзя создавать классы, производные от абстрактного</string>
+    <string name="god.q7.v4">У абстрактного класса не может быть методов</string>
+
+    <string name="god.q8">Вопрос 8. Выберите верное утверждение:</string>
+    <string name="god.q8.v1">Методы с ключевым словом override должны быть переопределены в производных классах</string>
+    <string name="god.q8.v2">Модификаторы sealed и override не могут использоваться в одной конструкции</string>
+    <string name="god.q8.v3">Если класс-родитель определен с ключевым словом override, то в производном классе не обязательно реализовывать все поля и методы родительского</string>
 
 
     <string name="about">Здесь будет текст о программе</string>

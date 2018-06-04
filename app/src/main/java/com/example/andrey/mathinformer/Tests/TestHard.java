@@ -60,4 +60,31 @@ public class TestHard extends AppCompatActivity {
 
         return score;
     }
+
+    public void WrongAnswers(View view){
+        if (score() == 9) {
+            Toast toast = Toast.makeText(getApplicationContext(),
+                    "Все ответы верны", Toast.LENGTH_LONG);
+            toast.show();
+        }
+        else {
+            Toast toast = Toast.makeText(getApplicationContext(),
+                    "Неверные ответы:" + WrongNumbers(), Toast.LENGTH_LONG);
+            toast.show();
+        }
+    }
+    private String WrongNumbers(){
+        String answers = "";
+        if (!rb_q1.isChecked()) answers += " 1";
+        if (!rb_q2.isChecked()) answers += " 2";
+        if (!rb_q3.isChecked()) answers += " 3";
+        if (!rb_q4.isChecked()) answers += " 4";
+        if (!rb_q5.isChecked()) answers += " 5";
+        if (!rb_q6.isChecked()) answers += " 6";
+        if (!rb_q7.isChecked()) answers += " 7";
+        if (!rb_q8.isChecked()) answers += " 8";
+        if (!rb_q9.isChecked()) answers += " 9";
+
+        return answers;
+    }
 }
