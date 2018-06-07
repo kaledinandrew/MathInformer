@@ -29,6 +29,7 @@
     <string name="programs.crypter">Шифровальщик</string>
     <string name="programs.converter">Перевод систем счисления</string>
     <string name="programs.rootSearch">Поиск корней</string>
+    <string name="programs.physicalConverter">Перевод физических величин</string>
 
     <string name="programs.converter.edit1">Из:(до 36)</string>
     <string name="programs.converter.edit2">В:(до 36)</string>
@@ -68,6 +69,15 @@
     <string name="programs.crypter.title_instruction">Пояснения</string>
     <string name="programs.crypter.text_instruction">Данная программа кодирует текст по следующему алгоритму: \n1) Переводим каждый символ в число, которому он соответствует в таблице кодировок; \n2) Увеличиваем каждое число на величину, получаемую из ключа; \n3) Переводим число обратно в символ, при помощи таблицы кодировок. \n\nДля расшифровки используется тот же алгоритм, но коды символов не увеличиваются, а уменьшаются. \n</string>
     <string name="programs.crypter.example">Пример: \nВозьмем слово \"Апрель\" и ключ 5:11:3 \n1) В таблице находим следующие соответствия: \nА = 225, п = 208, р = 210, е = 197, л = 204, ь = 216 \n2) В соответствии со значениями ключа изменяем полученные числа: \n225 + 5 = 230; 208 + 11 = 219; 210 + 3 = 213; 197 + 5 = 202; 204 + 11 = 215; 216 + 3 = 219 \n3)Переводим новые числа в символы: \n230 = Е; 219 = ъ; 213 = у; 202 = к; 215 = ц; 219 = я \nПолучаем слово \"Еъукця\" \n</string>
+
+    <string name="programs.physicalConverter.menu_1">км/ч -> м/с</string>
+    <string name="programs.physicalConverter.menu_2">м/с -> км/ч</string>
+    <string name="programs.physicalConverter.menu_3">мили -> км</string>
+    <string name="programs.physicalConverter.menu_4">км -> мили</string>
+    <string name="programs.physicalConverter.menu_5">мм рт. ст. -> Па</string>
+    <string name="programs.physicalConverter.input">Введите число: </string>
+    <string name="programs.physicalConverter.help">Выберите единицы измерения в правом верхнем углу</string>
+    <string name="programs.physicalConverter.button">Перевести</string>
 
     <string name="ege.title">Подготовка к ЕГЭ</string>
     <string name="ege.1">1. Перевод систем счисления</string>

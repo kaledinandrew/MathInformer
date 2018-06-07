@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.andrey.mathinformer.Programs.PhysicalConverter">
+
+    <TextView
+        android:id="@+id/phConverter_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/programs.physicalConverter.help"
+        android:textSize="25sp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/phConverter_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:textSize="30sp"
+        android:hint="@string/programs.physicalConverter.input"/>
+
+    <Button
+        android:id="@+id/phConverter_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/programs.physicalConverter.button"
+        android:textSize="25sp"
+        android:onClick="showResult"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/phConverter_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textIsSelectable="true"
+        android:gravity="center"/>
+
+</LinearLayout>

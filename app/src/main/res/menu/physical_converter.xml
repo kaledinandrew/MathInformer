@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_1"
+        android:onClick="speed_to_seconds"
+        android:orderInCategory="1"
+        android:title="@string/programs.physicalConverter.menu_1"
+        android:visible="true" />
+    <item
+        android:id="@+id/menu_2"
+        android:onClick="speed_to_hours"
+        android:orderInCategory="2"
+        android:title="@string/programs.physicalConverter.menu_2"
+        android:visible="true"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_3"
+        android:onClick="length_to_km"
+        android:layout_height="match_parent"
+        android:orderInCategory="3"
+        android:title="@string/programs.physicalConverter.menu_3"
+        android:visible="true"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_4"
+        android:onClick="length_to_miles"
+        android:orderInCategory="4"
+        android:title="@string/programs.physicalConverter.menu_4"
+        android:visible="true" />
+    <item
+        android:id="@+id/menu_5"
+        android:onClick="pressure_to_Pa"
+        android:orderInCategory="5"
+        android:title="@string/programs.physicalConverter.menu_5"
+        android:visible="true"
+        app:showAsAction="never" />
+</menu>
