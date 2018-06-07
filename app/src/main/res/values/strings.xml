@@ -61,7 +61,7 @@
     <string name="programs.crypter.title">Шифровальщик</string>
     <string name="programs.crypter.input.key">Ключ: </string>
     <string name="programs.crypter.input.text">Введите текст: </string>
-    <string name="programs.crypter.text1">Вид ключа: \n 43:5:12</string>
+    <string name="programs.crypter.text1">Вид ключа:\n 43:5:12</string>
     <string name="programs.crypter.result">Результат</string>
     <string name="programs.crypter.button_encrypt">Зашифровать</string>
     <string name="programs.crypter.button_decrypt">Расшифровать</string>
