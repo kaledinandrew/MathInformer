@@ -1,9 +1,13 @@
 package com.example.andrey.mathinformer;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 public class EgePage extends AppCompatActivity {
 
@@ -19,7 +23,102 @@ public class EgePage extends AppCompatActivity {
         ListView listView = (ListView)findViewById(R.id.list_test);
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, themes);
         listView.setAdapter(arrayAdapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View itemClicked, int position, long id) {
+                TextView textView = (TextView) itemClicked;
+                String strText = textView.getText().toString(); // получаем текст нажатого элемента
+                Intent intent_different_layouts = new Intent(EgePage.this, EgeSelector.class);
+
+                if(strText.equalsIgnoreCase(getResources().getString(R.string.ege_1))) {
+                    intent_different_layouts.putExtra("", 1);
+                }
+                else if(strText.equalsIgnoreCase(getResources().getString(R.string.ege_2))) {
+                    intent_different_layouts.putExtra("", 2);
+                }
+                else if(strText.equalsIgnoreCase(getResources().getString(R.string.ege_3))) {
+                    intent_different_layouts.putExtra("", 3);
+                }
+                else if(strText.equalsIgnoreCase(getResources().getString(R.string.ege_4))) {
+                    intent_different_layouts.putExtra("", 4);
+                }
+                else if(strText.equalsIgnoreCase(getResources().getString(R.string.ege_5))) {
+                    intent_different_layouts.putExtra("", 5);
+                }
+                else if(strText.equalsIgnoreCase(getResources().getString(R.string.ege_6))) {
+                    intent_different_layouts.putExtra("", 6);
+                }
+                else if(strText.equalsIgnoreCase(getResources().getString(R.string.ege_7))) {
+                    intent_different_layouts.putExtra("", 7);
+                }
+                else if(strText.equalsIgnoreCase(getResources().getString(R.string.ege_8))) {
+                    intent_different_layouts.putExtra("", 8);
+                }
+                else if(strText.equalsIgnoreCase(getResources().getString(R.string.ege_9))) {
+                    intent_different_layouts.putExtra("", 9);
+                }
+                else if(strText.equalsIgnoreCase(getResources().getString(R.string.ege_10))) {
+                    intent_different_layouts.putExtra("", 10);
+                }
+                else if(strText.equalsIgnoreCase(getResources().getString(R.string.ege_11))) {
+                    intent_different_layouts.putExtra("", 11);
+                }
+                else if(strText.equalsIgnoreCase(getResources().getString(R.string.ege_12))) {
+                    intent_different_layouts.putExtra("", 12);
+                }
+                else if(strText.equalsIgnoreCase(getResources().getString(R.string.ege_13))) {
+                    intent_different_layouts.putExtra("", 13);
+                }
+                else if(strText.equalsIgnoreCase(getResources().getString(R.string.ege_14))) {
+                    intent_different_layouts.putExtra("", 14);
+                }
+                else if(strText.equalsIgnoreCase(getResources().getString(R.string.ege_15))) {
+                    intent_different_layouts.putExtra("", 15);
+                }
+                else if(strText.equalsIgnoreCase(getResources().getString(R.string.ege_16))) {
+                    intent_different_layouts.putExtra("", 16);
+                }
+                else if(strText.equalsIgnoreCase(getResources().getString(R.string.ege_17))) {
+                    intent_different_layouts.putExtra("", 17);
+                }
+                else if(strText.equalsIgnoreCase(getResources().getString(R.string.ege_18))) {
+                    intent_different_layouts.putExtra("", 18);
+                }
+                else if(strText.equalsIgnoreCase(getResources().getString(R.string.ege_19))) {
+                    intent_different_layouts.putExtra("", 19);
+                }
+                else if(strText.equalsIgnoreCase(getResources().getString(R.string.ege_20))) {
+                    intent_different_layouts.putExtra("", 20);
+                }
+                else if(strText.equalsIgnoreCase(getResources().getString(R.string.ege_21))) {
+                    intent_different_layouts.putExtra("", 21);
+                }
+                else if(strText.equalsIgnoreCase(getResources().getString(R.string.ege_22))) {
+                    intent_different_layouts.putExtra("", 22);
+                }
+                else if(strText.equalsIgnoreCase(getResources().getString(R.string.ege_23))) {
+                    intent_different_layouts.putExtra("", 23);
+                }
+                else if(strText.equalsIgnoreCase(getResources().getString(R.string.ege_24))) {
+                    intent_different_layouts.putExtra("", 24);
+                }
+                else if(strText.equalsIgnoreCase(getResources().getString(R.string.ege_25))) {
+                    intent_different_layouts.putExtra("", 25);
+                }
+                else if(strText.equalsIgnoreCase(getResources().getString(R.string.ege_26))) {
+                    intent_different_layouts.putExtra("", 26);
+                }
+                else if(strText.equalsIgnoreCase(getResources().getString(R.string.ege_27))) {
+                    intent_different_layouts.putExtra("", 27);
+                }
+
+                startActivity(intent_different_layouts);
+            }
+        });
     }
+
+
 
     private String[] set_strings(String[] themes){
         themes[0] = "1. Перевод систем счисления";

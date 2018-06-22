@@ -40,12 +40,12 @@
             android:name=".Programs.RootSearch"
             android:screenOrientation="portrait" />
         <activity android:name=".EgePage" />
-        <activity android:name=".TheoryStructure" />
         <activity android:name=".Tests.TestEasy" />
         <activity android:name=".Tests.TestMiddle" />
         <activity android:name=".Tests.TestHard" />
         <activity android:name=".Tests.TestGod" />
-        <activity android:name=".Programs.PhysicalConverter"></activity>
+        <activity android:name=".Programs.PhysicalConverter" />
+        <activity android:name=".EgeSelector"></activity>
     </application>
 
 </manifest>
