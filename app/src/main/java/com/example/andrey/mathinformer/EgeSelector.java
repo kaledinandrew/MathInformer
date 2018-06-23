@@ -76,25 +76,25 @@ public class EgeSelector extends AppCompatActivity {
                 setContentView(R.layout.ege_layout_20);
                 break;
             case 21:
-                setContentView(R.layout.ege_layout_13);
+                setContentView(R.layout.ege_layout_21);
                 break;
             case 22:
-                setContentView(R.layout.ege_layout_13);
+                setContentView(R.layout.ege_layout_22);
                 break;
             case 23:
-                setContentView(R.layout.ege_layout_13);
+                setContentView(R.layout.ege_layout_23);
                 break;
             case 24:
-                setContentView(R.layout.ege_layout_13);
+                setContentView(R.layout.ege_layout_24);
                 break;
             case 25:
-                setContentView(R.layout.ege_layout_13);
+                setContentView(R.layout.ege_layout_25);
                 break;
             case 26:
-                setContentView(R.layout.ege_layout_13);
+                setContentView(R.layout.ege_layout_26);
                 break;
             case 27:
-                setContentView(R.layout.ege_layout_13);
+                setContentView(R.layout.ege_layout_27);
                 break;
         }
     }
