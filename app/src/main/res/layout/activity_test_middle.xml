@@ -11,9 +11,10 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/middle.title"
-        android:gravity="center"
-        android:textSize="25sp"/>
+        android:text="@string/tests.levels.middle"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="32sp"
+        android:gravity="center" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -39,7 +40,8 @@
 
             <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:theme="@style/MyRadioButton">
 
                 <RadioButton
                     android:layout_width="match_parent"
@@ -86,7 +88,8 @@
 
             <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:theme="@style/MyRadioButton">
 
                 <RadioButton
                     android:layout_width="match_parent"
@@ -133,7 +136,8 @@
 
             <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:theme="@style/MyRadioButton">
 
                 <RadioButton
                     android:id="@+id/middle_rb3"
@@ -175,7 +179,8 @@
 
             <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:theme="@style/MyRadioButton">
 
                 <RadioButton
                     android:layout_width="match_parent"
@@ -217,7 +222,8 @@
 
             <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:theme="@style/MyRadioButton">
 
                 <RadioButton
                     android:layout_width="match_parent"
@@ -259,7 +265,8 @@
 
             <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:theme="@style/MyRadioButton">
 
                 <RadioButton
                     android:layout_width="match_parent"
@@ -301,7 +308,8 @@
 
             <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:theme="@style/MyRadioButton">
 
                 <RadioButton
                     android:id="@+id/middle_rb7"
@@ -343,7 +351,8 @@
 
             <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:theme="@style/MyRadioButton">
 
                 <RadioButton
                     android:layout_width="match_parent"
@@ -385,7 +394,8 @@
 
             <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:theme="@style/MyRadioButton">
 
                 <RadioButton
                     android:layout_width="match_parent"
@@ -432,7 +442,8 @@
 
             <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:theme="@style/MyRadioButton">
 
                 <RadioButton
                     android:id="@+id/middle_rb10"
@@ -470,7 +481,8 @@
                 android:layout_height="wrap_content"
                 android:onClick="showResult"
                 android:text="@string/tests.check"
-                android:textSize="20sp"/>
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="24sp"/>
 
             <Button
                 style="?android:attr/buttonBarButtonStyle"
@@ -478,7 +490,8 @@
                 android:layout_height="wrap_content"
                 android:onClick="WrongAnswers"
                 android:text="@string/tests.showWrong"
-                android:textSize="20sp" />
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="21sp" />
 
 
         </LinearLayout>

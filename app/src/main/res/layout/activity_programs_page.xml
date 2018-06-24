@@ -13,31 +13,43 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:background="@drawable/main_button"
         android:text="@string/programs.crypter"
-        android:textSize="25sp"/>
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="28sp" />
 
     <Button
         android:id="@+id/go_to_converter_numeration"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:background="@drawable/main_button"
         android:text="@string/programs.converter"
-        android:textSize="25sp"/>
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="28sp" />
 
     <Button
         android:id="@+id/go_to_root_search"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:background="@drawable/main_button"
         android:text="@string/programs.rootSearch"
-        android:textSize="25sp"/>
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="28sp" />
 
     <Button
         android:id="@+id/go_to_physical_converter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:background="@drawable/main_button"
         android:text="@string/programs.physicalConverter"
-        android:textSize="25sp"/>
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="27sp" />
 
 </LinearLayout>

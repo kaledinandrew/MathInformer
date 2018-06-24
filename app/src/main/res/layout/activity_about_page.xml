@@ -5,11 +5,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.andrey.mathinformer.AboutPage">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="@string/main.about"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:textSize="32sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="@string/about"
-        android:textSize="25sp"/>
+        android:textSize="30sp"/>
 </LinearLayout>

@@ -2,10 +2,10 @@
     <string name="app_name">MathInformer</string>
 
     <string name="main.ege">ЕГЭ</string>
-    <string name="main.theory">Теория по программированию</string>
-    <string name="main.tests">Тесты</string>
+    <string name="main.theory">Теория по C#</string>
+    <string name="main.tests">Тесты по C#</string>
     <string name="main.useful_programs">Полезные программы</string>
-    <string name="main.about_the_program">О программе</string>
+    <string name="main.about">О программе</string>
 
     <string name="theory.title">Теория</string>
     <string name="theory.1">Введение</string>
@@ -52,7 +52,7 @@
     <string name="programs.roots.A">A</string>
     <string name="programs.roots.B">B</string>
     <string name="programs.roots.C">C</string>
-    <string name="programs.roots.text1">x^2 + </string>
+    <string name="programs.roots.text1">*x^2 + </string>
     <string name="programs.roots.text2">*x + </string>
     <string name="programs.roots.text3"> = 0</string>
     <string name="programs.roots.button">Вычислить</string>
@@ -195,11 +195,10 @@
     <string name="tests.levels.easy">Простой уровень</string>
     <string name="tests.levels.middle">Средний уровень</string>
     <string name="tests.levels.hard">Сложный уровень</string>
-    <string name="tests.levels.god">Бог программирования</string>
+    <string name="tests.levels.god">Бог C#</string>
     <string name="tests.check">Проверить ответы</string>
     <string name="tests.showWrong">Показать неправильные ответы</string>
 
-    <string name="easy.title">Простой уровень</string>
     <string name="easy.q1">Вопрос 1. Что такое тип double?</string>
     <string name="easy.q1.v1">8-битное целое число</string>
     <string name="easy.q1.v2">32-битное целое число</string>
@@ -237,10 +236,8 @@
     <string name="easy.q7.v3">7</string>
     <string name="easy.q7.v4">346</string>
 
-    <string name="middle.title">Средний уровень</string>
     <string name="middle.q1"><b>Вопрос 1</b>. Что будет выведено в результате работы следующей части программы:</string>
-    <string name="middle.code1">" "int g = 2; \n if (g > 3) { \n "  "if (g > 8) Console.WriteLine(32); \n "  "else Console.WriteLine(58); \n } \n else{ \n "  "if (g > 8) Console.WriteLine(43); \n "  "else Console.WriteLine(98); \n }
-    </string>
+    <string name="middle.code1">" "int g = 2; \n if (g > 3) { \n "  "if (g > 8) Console.WriteLine(32); \n "  "else Console.WriteLine(58); \n } \n else{ \n "  "if (g > 8) Console.WriteLine(43); \n "  "else Console.WriteLine(98); \n }</string>
     <string name="middle.q1.v1">43</string>
     <string name="middle.q1.v2">98</string>
     <string name="middle.q1.v3">58</string>
@@ -294,8 +291,6 @@
     <string name="middle.q10.v3">foreach(int i in a){ Console.Write(a[i] + \" \"); }</string>
     <string name="middle.q10.v4">foreach(i in a){ Console.Write(i + \" \"); }</string>
 
-
-    <string name="hard.title">Сложный уровень</string>
     <string name="hard.q1">Вопрос 1. Какой тип возвращемого значения у данной функции:</string>
     <string name="hard.code1">" "public static int repeater(int t){ \n "  "return t;\n }</string>
     <string name="hard.q1.v1">public</string>
@@ -344,8 +339,6 @@
     <string name="hard.q9.v3">if (i == j) { result += a[i, j]; }</string>
     <string name="hard.q9.v4">if (i == 3 - 1 - j) { result += a[i, j]; }</string>
 
-
-    <string name="god.title">Бог программирования</string>
     <string name="god.q1">Вопрос 1. Укажите некорректную запись:</string>
     <string name="god.q1.v1">public class Student {}</string>
     <string name="god.q1.v2">static class Student {}</string>

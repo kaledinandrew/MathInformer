@@ -15,22 +15,28 @@
         android:orientation="horizontal">
 
         <Button
-            style="?android:attr/buttonBarButtonStyle"
             android:id="@+id/button_to_ege"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@drawable/main_button"
             android:text="@string/main.ege"
-            android:textSize="20sp"/>
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="32sp"
+            tools:ignore="NestedWeights" />
 
         <Button
-            style="?android:attr/buttonBarButtonStyle"
             android:id="@+id/button_to_theory"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@drawable/main_button"
             android:text="@string/main.theory"
-            android:textSize="20sp"/>
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="26sp"
+            tools:ignore="NestedWeights" />
 
     </LinearLayout>
 
@@ -41,32 +47,40 @@
         android:orientation="horizontal">
 
         <Button
-            style="?android:attr/buttonBarButtonStyle"
             android:id="@+id/button_to_tests"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@drawable/main_button"
             android:text="@string/main.tests"
-            android:textSize="20sp"/>
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="26sp"
+            tools:ignore="NestedWeights" />
 
         <Button
-            style="?android:attr/buttonBarButtonStyle"
             android:id="@+id/button_to_programs"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@drawable/main_button"
             android:text="@string/main.useful_programs"
-            android:textSize="20sp"/>
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="26sp"
+            tools:ignore="NestedWeights" />
 
     </LinearLayout>
 
     <Button
-        style="?android:attr/buttonBarButtonStyle"
         android:id="@+id/button_to_about"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="@string/main.about_the_program"
-        android:textSize="30sp"/>
+        android:background="@drawable/main_button"
+        android:text="@string/main.about"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp" />
 
 </LinearLayout>

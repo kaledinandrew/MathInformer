@@ -58,15 +58,21 @@
                 android:id="@+id/button_encrypting"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/main_button"
                 android:text="@string/programs.crypter.button_encrypt"
-                android:textSize="15sp" />
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/button_decrypting"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/main_button"
                 android:text="@string/programs.crypter.button_decrypt"
-                android:textSize="15sp" />
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="24sp" />
         </LinearLayout>
 
     </LinearLayout>

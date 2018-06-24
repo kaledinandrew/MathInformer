@@ -9,7 +9,6 @@ public class EgeSelector extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_ege_selector);
 
         Bundle arguments = getIntent().getExtras();
         this.number = Integer.valueOf(arguments.get("").toString());
