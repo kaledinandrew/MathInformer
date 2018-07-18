@@ -10,7 +10,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/logo_2_1"
+        android:icon="@drawable/logo_2_6"
         android:label="@string/app_name"
         android:roundIcon="@drawable/logo_2"
         android:supportsRtl="true"
@@ -46,6 +46,7 @@
         <activity android:name=".Tests.TestGod" />
         <activity android:name=".Programs.PhysicalConverter" />
         <activity android:name=".EgeSelector"></activity>
+        <activity android:name=".TheorySelector" />
     </application>
 
 </manifest>

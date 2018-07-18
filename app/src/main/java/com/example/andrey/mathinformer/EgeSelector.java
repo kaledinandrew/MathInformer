@@ -4,14 +4,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class EgeSelector extends AppCompatActivity {
-    private int number;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         Bundle arguments = getIntent().getExtras();
-        this.number = Integer.valueOf(arguments.get("").toString());
+        int number = Integer.valueOf(arguments.get("").toString());
 
         switch (number) {
             case 1:

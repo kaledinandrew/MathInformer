@@ -15,7 +15,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="5sp">
+        android:padding="10sp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -28,6 +28,7 @@
                 android:textAlignment="inherit"
                 android:textStyle="bold"
                 android:text="@string/ege.task"
+                android:textColor="@color/colorTitleText"
                 android:textSize="25sp"/>
             <TextView
                 android:layout_width="match_parent"
@@ -45,6 +46,7 @@
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:text="@string/ege.solution"
+                android:textColor="@color/colorTitleText"
                 android:textSize="25sp"/>
             <TextView
                 android:layout_width="match_parent"
@@ -57,6 +59,7 @@
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:text="@string/ege.3.answer"
+                android:textColor="@color/colorTitleText"
                 android:textSize="25sp"/>
 
         </LinearLayout>
