@@ -53,7 +53,7 @@ public class Crypter extends AppCompatActivity {
         String str_default = input_text_crypter.getText().toString();
         String[] str_key_array = str_key.split(":");
         String str_encrypted = "";
-        Character ch_help = ' ';
+        Character ch_help;
 
         int[] key_array = key_to_array();
         for (int i = 0; i < key_array.length; i++){
@@ -91,7 +91,16 @@ public class Crypter extends AppCompatActivity {
         public void onClick(View v) {
             String str_input = input_text_crypter.getText().toString();
             String key_input = input_key_crypter.getText().toString();
-            if (!str_input.equals("") && !key_input.equals(""))
+
+            boolean empty_fields, wrong_key_numbers = false;
+            empty_fields = (!str_input.equals("") && !key_input.equals("")) ?  Boolean.FALSE : Boolean.TRUE;
+
+            String[] key_values = key_input.split(":");
+            for (String s : key_values){
+                if (s.length() > 8 || s.length() < 1) { wrong_key_numbers = true; break; }
+            }
+
+            if (!empty_fields && !wrong_key_numbers)
                 switch (v.getId()){
                     case R.id.button_encrypting:
                         String str_print_encrypt = text_encrypting(str_input, key_input);
@@ -102,7 +111,11 @@ public class Crypter extends AppCompatActivity {
                         text_crypting_result.setText(str_print_decrypt);
                         break;
                 }
-            else{
+            else if (wrong_key_numbers) {
+                Toast toast = Toast.makeText(getApplicationContext(), "Каждое значение в ключе должно быть больше 0 и меньше 10^8", Toast.LENGTH_LONG);
+                toast.show();
+            }
+            else {
                 Toast toast = Toast.makeText(getApplicationContext(), "Некоторые поля пусты", Toast.LENGTH_SHORT);
                 toast.show();
             }
