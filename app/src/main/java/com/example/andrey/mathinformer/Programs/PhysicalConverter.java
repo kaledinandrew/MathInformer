@@ -58,34 +58,35 @@ public class PhysicalConverter extends AppCompatActivity {
     }
 
     public void showResult(View view) {
-        if (input.getText().toString() == "") Toast.makeText(this, "Не введено число для перевода", Toast.LENGTH_SHORT).show();
+        if (input.getText().toString() == "")
+            Toast.makeText(this, "Не введено число для перевода", Toast.LENGTH_SHORT).show();
         else{
             Double answer;
             switch (operation) {
                 case 1:
                     answer = Double.parseDouble(input.getText().toString());
                     answer /= 3.6;
-                    result.setText((input.getText().toString() + " км/ч = " + String.valueOf(answer) + " м/с"));
+                    result.setText((input.getText().toString() + " км/ч = " + String.valueOf(String.format("%.2f", answer)) + " м/с"));
                     break;
                 case 2:
                     answer = Double.parseDouble(input.getText().toString());
-                    answer /= 3.6;
-                    result.setText((input.getText().toString() + " м/с = " + String.valueOf(answer) + " км/ч"));
+                    answer *= 3.6;
+                    result.setText((input.getText().toString() + " м/с = " + String.valueOf(String.format("%.2f", answer)) + " км/ч"));
                     break;
                 case 3:
                     answer = Double.parseDouble(input.getText().toString());
                     answer *= 1.60934;
-                    result.setText((input.getText().toString() + " mi = " + String.valueOf(answer) + " км"));
+                    result.setText((input.getText().toString() + " mi = " + String.valueOf(String.format("%.2f", answer)) + " км"));
                     break;
                 case 4:
                     answer = Double.parseDouble(input.getText().toString());
                     answer /= 1.60934;
-                    result.setText((input.getText().toString() + " км = " + String.valueOf(answer) + " mi"));
+                    result.setText((input.getText().toString() + " км = " + String.valueOf(String.format("%.2f", answer)) + " mi"));
                     break;
                 case 5:
                     answer = Double.parseDouble(input.getText().toString());
                     answer *= 133.322;
-                    result.setText((input.getText().toString() + " мм рт. ст. = " + String.valueOf(answer) + " Па"));
+                    result.setText((input.getText().toString() + " мм рт. ст. = " + String.valueOf(String.format("%.2f", answer)) + " Па"));
                     break;
                 default:
                     Toast.makeText(this, "Не выбраны физические величины для перевода", Toast.LENGTH_SHORT).show();

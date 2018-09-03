@@ -8,6 +8,15 @@
     tools:context="com.example.andrey.mathinformer.Programs.PhysicalConverter">
 
     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/programs.physicalConverter"
+        android:textColor="@color/colorTitleText"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <TextView
         android:id="@+id/phConverter_help"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

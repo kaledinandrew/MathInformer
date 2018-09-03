@@ -11,7 +11,7 @@
     <string name="programs.calculator">Калькулятор</string>
     <string name="programs.crypter">Шифровальщик</string>
     <string name="programs.converter">Перевод систем счисления</string>
-    <string name="programs.rootSearch">Поиск корней</string>
+    <string name="programs.rootSearch">Поиск корней квадратного уравнения</string>
     <string name="programs.physicalConverter">Перевод физических величин</string>
 
     <string name="programs.converter.edit1">Из:(до 36)</string>
@@ -364,5 +364,9 @@
     <string name="god.q8.v3">Если класс-родитель определен с ключевым словом override, то в производном классе не обязательно реализовывать все поля и методы родительского</string>
 
 
-    <string name="about">Здесь будет текст о программе</string>
+    <string name="about.main">"    "Мой проект - справочник по информатике для учеников, только начинающих изучать объектно-ориетированные языки, C# в частности, или просто желающих закрепить свои знания по данной теме. Также, приложение может помочь в подготовке к ЕГЭ по информатике.
+    \n"    "От аналогов приложение отличается комбинацией как справочника по C#, так и сборника для подготовки к ЕГЭ и наличием полезных программ для проверки собственных вычислений.</string>
+    <string name="about.contacts">Автор приложения MathInformer: Каледин Андрей \nGitHub: https://github.com/raskolnikoff1147</string>
+    <string name="about.separator">====================</string>
+
 </resources>

@@ -28,9 +28,9 @@ public class RootSearch extends AppCompatActivity {
     public final void find_root(View view){
         Double A=0.0, B=0.0, C=0.0, D;
         String str_result, A_string, B_string, C_string;
-        A_string = input_A.getText().toString();
-        B_string = input_B.getText().toString();
-        C_string = input_C.getText().toString();
+        A_string = input_A.getText().toString().replace(',', '.');
+        B_string = input_B.getText().toString().replace(',', '.');
+        C_string = input_C.getText().toString().replace(',', '.');
 
         if (!A_string.equals("") && !B_string.equals("") && !C_string.equals("")) {
             A = Double.valueOf(A_string);
@@ -40,28 +40,23 @@ public class RootSearch extends AppCompatActivity {
             if (A != 0) {
                 D = Math.pow(B, 2) - 4 * A * C;
                 if (D > 0) {
-                    Double x1, x2;
-                    x1 = ((-1) * B - Math.pow(D, 0.5)) / (2 * A);
-                    x2 = ((-1) * B + Math.pow(D, 0.5)) / (2 * A);
-
-                    str_result = "D > 0 \n" + "D = " + String.valueOf(D) + "\n";
-                    str_result += "x1 = " + String.valueOf(x1) + "\nx2 = " + String.valueOf(x2);
+                    Double  x1 = ((-1) * B - Math.pow(D, 0.5)) / (2 * A),
+                            x2 = ((-1) * B + Math.pow(D, 0.5)) / (2 * A);
+                    str_result = "D > 0 \n" + "D = " + String.valueOf(String.format("%.2f", D)) + "\n";
+                    str_result += "x1 = " + String.valueOf(String.format("%.2f", x1)) + "\nx2 = " + String.valueOf(String.format("%.2f", x2));
                 }
                 else if (D == 0) {
-                    Double x;
-                    x = (-1) * B / (2 * A);
-
+                    Double x = (-1) * B / (2 * A);
                     str_result = "D = 0 \n";
-                    str_result += "x1, x2 = " + String.valueOf(x);
+                    str_result += "x1, x2 = " + String.valueOf(String.format("%.2f", x));
                 }
                 else {
                     str_result = "D < 0 \nNo roots";
                 }
             }
             else {
-                Double x;
-                x = (-1) * C / B;
-                str_result = "x = " + String.valueOf(x);
+                Double x = (-1) * C / B;
+                str_result = "x = " + String.valueOf(String.format("%.2f", x));
             }
 
             result.setText(str_result);
