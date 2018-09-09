@@ -88,6 +88,7 @@ public class ConverterNumeration extends AppCompatActivity {
         for (int i = 0; i < number.length(); i++){
             char ch = number.charAt(i);
             if (!(ch >= '0' && ch <= '9') && (ch - 'A' >= from - 10)) return false;
+            if (Integer.parseInt(String.valueOf(ch)) >= from) return false;
         }
         return true;
     }

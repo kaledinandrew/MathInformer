@@ -51,7 +51,7 @@ public class RootSearch extends AppCompatActivity {
                     str_result += "x1, x2 = " + String.valueOf(String.format("%.2f", x));
                 }
                 else {
-                    str_result = "D < 0 \nNo roots";
+                    str_result = "D < 0 \nНет корней";
                 }
             }
             else {
