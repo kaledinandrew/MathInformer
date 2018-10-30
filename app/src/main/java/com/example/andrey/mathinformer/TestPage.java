@@ -1,8 +1,10 @@
 package com.example.andrey.mathinformer;
 
 import android.content.Intent;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
@@ -18,6 +20,13 @@ public class TestPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test_page);
 
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setHomeButtonEnabled(true);
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setTitle("Тесты по C#");
+        }
+
         Button button_to_ege = findViewById(R.id.button_to_easy);
         button_to_ege.setOnClickListener(onClickListener_to_another_activity);
 
@@ -29,6 +38,16 @@ public class TestPage extends AppCompatActivity {
 
         Button button_to_programs = findViewById(R.id.button_to_god);
         button_to_programs.setOnClickListener(onClickListener_to_another_activity);
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     private final View.OnClickListener onClickListener_to_another_activity = new View.OnClickListener() {

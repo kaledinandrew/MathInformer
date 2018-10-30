@@ -23,6 +23,7 @@
             android:autoLink="web"
             android:linksClickable="true"
             android:text="@string/theory.3.text"
+            android:textColor="@color/colorText"
             android:textAlignment="inherit"
             android:textSize="24sp" />
 

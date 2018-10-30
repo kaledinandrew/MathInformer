@@ -1,12 +1,12 @@
 package com.example.andrey.mathinformer.Programs;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -14,7 +14,8 @@ import com.example.andrey.mathinformer.R;
 
 public class PhysicalConverter extends AppCompatActivity {
 
-    private int operation = 0;
+    RadioButton radio1, radio2, radio3, radio4, radio5;
+    int operation = 0;
     TextView help, result;
     EditText input;
     Button button;
@@ -24,41 +25,50 @@ public class PhysicalConverter extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_physical_converter);
 
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setHomeButtonEnabled(true);
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setTitle("Полезные программы");
+        }
+
         help = findViewById(R.id.phConverter_help);
         result = findViewById(R.id.phConverter_result);
         button = findViewById(R.id.phConverter_button);
         input = findViewById(R.id.phConverter_input);
+
+        radio1 = findViewById(R.id.converter_1);
+        radio2 = findViewById(R.id.converter_2);
+        radio3 = findViewById(R.id.converter_3);
+        radio4 = findViewById(R.id.converter_4);
+        radio5 = findViewById(R.id.converter_5);
     }
 
-    public void speed_to_seconds(MenuItem item){
-        help.setText("Перевод скорости из км/ч в м/с");
-        operation = 1;
-    }
-    public void speed_to_hours(MenuItem item){
-        help.setText("Перевод скорости из м/с в км/ч");
-        operation = 2;
-    }
-    public void length_to_km(MenuItem item){
-        help.setText("Перевод расстояния из миль в км");
-        operation = 3;
-    }
-    public void length_to_miles(MenuItem item){
-        help.setText("Перевод расстояния из км в мили");
-        operation = 4;
-    }
-    public void pressure_to_Pa(MenuItem item){
-        help.setText("Перевод давления из мм ртутного столба в Па");
-        operation = 5;
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.physical_converter, menu);
-        return true;
+    public void radioButtonClickCheck(View view) {
+        if (radio1.isChecked()) {
+            help.setText("Перевод скорости из км/ч в м/с");
+            operation = 1;
+        }
+        else if (radio2.isChecked()) {
+            help.setText("Перевод скорости из м/с в км/ч");
+            operation = 2;
+        }
+        else if (radio3.isChecked()) {
+            help.setText("Перевод расстояния из миль в км");
+            operation = 3;
+        }
+        else if (radio4.isChecked()) {
+            help.setText("Перевод расстояния из км в мили");
+            operation = 4;
+        }
+        else if (radio5.isChecked()) {
+            help.setText("Перевод давления из мм ртутного столба в Па");
+            operation = 5;
+        }
     }
 
     public void showResult(View view) {
-        if (input.getText().toString() == "")
+        if (input.getText().toString().equals(""))
             Toast.makeText(this, "Не введено число для перевода", Toast.LENGTH_SHORT).show();
         else{
             Double answer;

@@ -34,6 +34,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/ege.14.task"
+                android:textColor="@color/colorText"
                 android:textSize="20sp"/>
 
 
@@ -48,6 +49,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/ege.14.solution"
+                android:textColor="@color/colorText"
                 android:textSize="20sp"/>
 
             <TextView

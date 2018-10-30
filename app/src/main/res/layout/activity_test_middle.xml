@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="7sp"
     tools:context="com.example.andrey.mathinformer.Tests.TestMiddle">
 
     <TextView
@@ -29,6 +30,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/middle.q1"
+                android:textColor="@color/colorText"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:textSize="20sp"/>
@@ -36,6 +38,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/middle.code1"
+                android:textColor="@color/colorText"
                 android:textSize="20sp"/>
 
             <RadioGroup
@@ -77,6 +80,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/middle.q2"
+                android:textColor="@color/colorText"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:textSize="20sp"/>
@@ -84,6 +88,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/middle.code2"
+                android:textColor="@color/colorText"
                 android:textSize="20sp"/>
 
             <RadioGroup
@@ -125,6 +130,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/middle.q3"
+                android:textColor="@color/colorText"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:textSize="20sp"/>
@@ -132,6 +138,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/middle.code3"
+                android:textColor="@color/colorText"
                 android:textSize="20sp"/>
 
             <RadioGroup
@@ -173,6 +180,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/middle.q4"
+                android:textColor="@color/colorText"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:textSize="20sp"/>
@@ -216,6 +224,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/middle.q5"
+                android:textColor="@color/colorText"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:textSize="20sp"/>
@@ -259,6 +268,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/middle.q6"
+                android:textColor="@color/colorText"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:textSize="20sp"/>
@@ -302,6 +312,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/middle.q7"
+                android:textColor="@color/colorText"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:textSize="20sp"/>
@@ -345,6 +356,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/middle.q8"
+                android:textColor="@color/colorText"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:textSize="20sp"/>
@@ -388,6 +400,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/middle.q9"
+                android:textColor="@color/colorText"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:textSize="20sp"/>
@@ -431,6 +444,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/middle.q10"
+                android:textColor="@color/colorText"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:textSize="20sp"/>

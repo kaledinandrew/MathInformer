@@ -1,7 +1,9 @@
 package com.example.andrey.mathinformer.Tests;
 
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.Toast;
@@ -17,6 +19,13 @@ public class TestHard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test_hard);
 
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setHomeButtonEnabled(true);
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setTitle("Тесты по C#");
+        }
+
         rb_q1 = findViewById(R.id.hard_rb1);
         rb_q2 = findViewById(R.id.hard_rb2);
         rb_q3 = findViewById(R.id.hard_rb3);
@@ -26,6 +35,17 @@ public class TestHard extends AppCompatActivity {
         rb_q7 = findViewById(R.id.hard_rb7);
         rb_q8 = findViewById(R.id.hard_rb8);
         rb_q9 = findViewById(R.id.hard_rb9);
+    }
+
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     public void showResult(View view){

@@ -1,28 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="7sp"
     tools:context="com.example.andrey.mathinformer.Programs.PhysicalConverter">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/programs.physicalConverter"
         android:textColor="@color/colorTitleText"
         android:textSize="30sp"
-        android:textStyle="bold"
-        android:textAlignment="center"/>
+        android:text="@string/programs.physicalConverter"
+        android:textAlignment="center"
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/phConverter_help"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/programs.physicalConverter.help"
+        android:textColor="@color/colorText"
         android:textSize="25sp"
         android:gravity="center"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5sp">
+
+        <RadioButton
+            android:id="@+id/converter_1"
+            android:onClick="radioButtonClickCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/programs.physicalConverter.menu_1"
+            android:textSize="25sp"/>
+        <RadioButton
+            android:id="@+id/converter_2"
+            android:onClick="radioButtonClickCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/programs.physicalConverter.menu_2"
+            android:textSize="25sp"/>
+        <RadioButton
+            android:id="@+id/converter_3"
+            android:onClick="radioButtonClickCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/programs.physicalConverter.menu_3"
+            android:textSize="25sp"/>
+        <RadioButton
+            android:id="@+id/converter_4"
+            android:onClick="radioButtonClickCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/programs.physicalConverter.menu_4"
+            android:textSize="25sp"/>
+        <RadioButton
+            android:id="@+id/converter_5"
+            android:onClick="radioButtonClickCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/programs.physicalConverter.menu_5"
+            android:textSize="25sp"/>
+    </RadioGroup>
 
     <EditText
         android:id="@+id/phConverter_input"

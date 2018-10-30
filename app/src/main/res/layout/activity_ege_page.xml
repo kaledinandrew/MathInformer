@@ -7,14 +7,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.andrey.mathinformer.EgePage">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/ege.title"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="32sp"
-        android:textAlignment="center"/>
     
     <ListView
         android:id="@+id/list_test"

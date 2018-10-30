@@ -1,13 +1,22 @@
 package com.example.andrey.mathinformer;
 
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 
 public class EgeSelector extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setHomeButtonEnabled(true);
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setTitle("Подготовка к ЕГЭ");
+        }
 
         Bundle arguments = getIntent().getExtras();
         int number = Integer.valueOf(arguments.get("").toString());
@@ -94,6 +103,16 @@ public class EgeSelector extends AppCompatActivity {
             case 27:
                 setContentView(R.layout.ege_layout_27);
                 break;
+        }
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
     }
 }

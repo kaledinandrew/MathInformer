@@ -44,9 +44,9 @@
         <activity android:name=".Tests.TestMiddle" />
         <activity android:name=".Tests.TestHard" />
         <activity android:name=".Tests.TestGod" />
-        <activity android:name=".Programs.PhysicalConverter" />
-        <activity android:name=".EgeSelector"></activity>
+        <activity android:name=".EgeSelector" />
         <activity android:name=".TheorySelector" />
+        <activity android:name=".Programs.PhysicalConverter"></activity>
     </application>
 
 </manifest>

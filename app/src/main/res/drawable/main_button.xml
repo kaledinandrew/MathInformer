@@ -5,17 +5,14 @@
     <gradient
         android:startColor="#FFFFFF"
         android:centerColor="#FFFFFF"
-        android:endColor="#336489"
+        android:endColor="#FFFFFF"
         android:type="radial"
         android:centerX="50%"
         android:centerY="50%"
         android:gradientRadius="360dp"/>
-
     <stroke
         android:width="3dp"
         android:color="@color/colorPrimary"/>
-
     <corners
         android:radius="20dp"/>
-
 </shape>

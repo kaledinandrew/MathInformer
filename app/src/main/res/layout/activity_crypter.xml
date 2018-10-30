@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="7sp"
     tools:context="com.example.andrey.mathinformer.Programs.Crypter">
 
     <TextView
@@ -33,6 +34,7 @@
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:text="@string/programs.crypter.text1"
+            android:textColor="@color/colorText"
             android:textSize="15sp" />
     </LinearLayout>
 
@@ -83,6 +85,7 @@
         android:layout_height="84dp"
         android:gravity="center"
         android:text="@string/programs.crypter.result"
+        android:textColor="@color/colorText"
         android:textIsSelectable="true"
         android:textSize="25sp" />
 
@@ -108,14 +111,16 @@
                 android:layout_height="wrap_content"
                 android:gravity="fill"
                 android:textSize="20sp"
-                android:text="@string/programs.crypter.text_instruction"/>
+                android:text="@string/programs.crypter.text_instruction"
+                android:textColor="@color/colorText"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="fill"
                 android:textSize="20sp"
-                android:text="@string/programs.crypter.example"/>
+                android:text="@string/programs.crypter.example"
+                android:textColor="@color/colorText"/>
         </LinearLayout>
     </ScrollView>
 

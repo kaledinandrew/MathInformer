@@ -8,14 +8,6 @@
     android:orientation="vertical"
     tools:context="com.example.andrey.mathinformer.TheoryPage">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/theory.title"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="32sp" />
-
     <ListView
         android:id="@+id/list_test"
         android:layout_width="match_parent"

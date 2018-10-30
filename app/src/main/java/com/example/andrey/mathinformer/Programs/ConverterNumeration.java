@@ -1,7 +1,9 @@
 package com.example.andrey.mathinformer.Programs;
 
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -25,10 +27,27 @@ public class ConverterNumeration extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_converter_numeration);
 
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setHomeButtonEnabled(true);
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setTitle("Полезные программы");
+        }
+
         input_numeration_number = findViewById(R.id.input_numeration_number);
         input_numeration_from = findViewById(R.id.input_numeration_from);
         input_numeration_to = findViewById(R.id.input_numeration_to);
         text_converting_result = findViewById(R.id.text_numeration_result);
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     public void convertNumber (View view) {

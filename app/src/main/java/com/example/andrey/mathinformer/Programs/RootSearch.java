@@ -1,7 +1,9 @@
 package com.example.andrey.mathinformer.Programs;
 
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -19,10 +21,27 @@ public class RootSearch extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_root_search);
 
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setHomeButtonEnabled(true);
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setTitle("Полезные программы");
+        }
+
         input_A = findViewById(R.id.input_root_search_A);
         input_B = findViewById(R.id.input_root_search_B);
         input_C = findViewById(R.id.input_root_search_C);
         result = findViewById(R.id.text_root_search_result);
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     public final void find_root(View view){

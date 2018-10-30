@@ -22,6 +22,7 @@
             android:layout_height="wrap_content"
             android:textAlignment="inherit"
             android:text="@string/theory.1.text"
+            android:textColor="@color/colorText"
             android:textSize="24sp"
             android:autoLink="web"
             android:linksClickable="true"/>

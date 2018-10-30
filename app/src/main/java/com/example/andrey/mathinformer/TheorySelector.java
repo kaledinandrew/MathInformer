@@ -1,13 +1,22 @@
 package com.example.andrey.mathinformer;
 
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 
 public class TheorySelector extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setHomeButtonEnabled(true);
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setTitle("Теория по C#");
+        }
 
         Bundle arguments = getIntent().getExtras();
         int number = Integer.valueOf(arguments.get("").toString());
@@ -52,6 +61,16 @@ public class TheorySelector extends AppCompatActivity {
             case 13:
                 setContentView(R.layout.theory_layout_13);
                 break;
+        }
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
     }
 }

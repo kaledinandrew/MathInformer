@@ -2,7 +2,9 @@ package com.example.andrey.mathinformer;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.ActionBar;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
@@ -18,6 +20,13 @@ public class ProgramsPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_programs_page);
 
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setHomeButtonEnabled(true);
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setTitle("Полезные программы");
+        }
+
         // go to other activities
 
         Button button_go_to_crypter = findViewById(R.id.go_to_crypter);
@@ -31,6 +40,17 @@ public class ProgramsPage extends AppCompatActivity {
 
         Button button_do_to_physical_converter = findViewById(R.id.go_to_physical_converter);
         button_do_to_physical_converter.setOnClickListener(onClickListener_go_to_other_activity);
+    }
+
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     private final View.OnClickListener onClickListener_go_to_other_activity = new View.OnClickListener() {
