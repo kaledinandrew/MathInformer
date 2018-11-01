@@ -3,6 +3,7 @@ package com.example.andrey.mathinformer.Programs;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -42,6 +43,16 @@ public class PhysicalConverter extends AppCompatActivity {
         radio3 = findViewById(R.id.converter_3);
         radio4 = findViewById(R.id.converter_4);
         radio5 = findViewById(R.id.converter_5);
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     public void radioButtonClickCheck(View view) {
