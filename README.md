@@ -13,6 +13,14 @@ MathInformer - это справочник по информатике для у
 
 ## Скриншоты 
 
-
-![](https://github.com/raskolnikoff1147/MathInformer/blob/master/Screenshots/main_page.jpg)
 ![](https://github.com/raskolnikoff1147/MathInformer/blob/master/Screenshots/main.jpg)
+![](https://github.com/raskolnikoff1147/MathInformer/blob/master/Screenshots/EGE_list.png)
+![](https://github.com/raskolnikoff1147/MathInformer/blob/master/Screenshots/Theory_list.png)
+
+![](https://github.com/raskolnikoff1147/MathInformer/blob/master/Screenshots/Tests_page.png)
+![](https://github.com/raskolnikoff1147/MathInformer/blob/master/Screenshots/Test_easy.png)
+![](https://github.com/raskolnikoff1147/MathInformer/blob/master/Screenshots/Test_hard.png)
+
+![](https://github.com/raskolnikoff1147/MathInformer/blob/master/Screenshots/programs_list.png)
+![](https://github.com/raskolnikoff1147/MathInformer/blob/master/Screenshots/programs_crypter.png)
+![](https://github.com/raskolnikoff1147/MathInformer/blob/master/Screenshots/programs_converter.png)
