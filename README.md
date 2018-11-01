@@ -7,10 +7,12 @@
 Проект разрабатывался в Android Studio, тесты проводились на Samsung Galaxy A5, Galaxy J7(2016), Galaxy Note 10.1.
 
 ## О проекте
-пвыар
+MathInformer - это справочник по информатике для учеников, только начинающих изучать объектно-ориетированные языки, в частности C#, или просто желающих закрепить свои знания по данной теме. Также, приложение может помочь в подготовке к ЕГЭ по информатике.
+
+В приложении присутствуют примеры решений заданий ЕГЭ, теоретический материал по основам объектно-ориенттированного программирования, тесты, помогающие определить уровень своих знаний, и некоторые программы для проверки собственных вычислений.
 
 ## Скриншоты 
 
-![](https://github.com/raskolnikoff1147/MathInformer/blob/master/Screenshots/main.jpg)
-![](https://github.com/raskolnikoff1147/MathInformer/blob/master/Screenshots/main.jpg)
+
+![](https://github.com/raskolnikoff1147/MathInformer/blob/master/Screenshots/main_page.jpg)
 ![](https://github.com/raskolnikoff1147/MathInformer/blob/master/Screenshots/main.jpg)
