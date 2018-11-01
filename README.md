@@ -11,4 +11,6 @@
 
 ## Скриншоты 
 
-
+![](https://github.com/raskolnikoff1147/MathInformer/blob/master/Screenshots/main.jpg)
+![](https://github.com/raskolnikoff1147/MathInformer/blob/master/Screenshots/main.jpg)
+![](https://github.com/raskolnikoff1147/MathInformer/blob/master/Screenshots/main.jpg)
