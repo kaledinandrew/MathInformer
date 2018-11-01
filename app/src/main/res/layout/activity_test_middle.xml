@@ -502,7 +502,7 @@
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="WrongAnswers"
+                android:onClick="wrongAnswers"
                 android:text="@string/tests.showWrong"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="21sp" />

@@ -80,7 +80,7 @@
         android:id="@+id/button_root_search"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="find_root"
+        android:onClick="findRoot"
         android:background="@drawable/main_button"
         android:text="@string/programs.roots.button"
         android:textSize="30sp"

@@ -30,16 +30,16 @@ public class ProgramsPage extends AppCompatActivity {
         // go to other activities
 
         Button button_go_to_crypter = findViewById(R.id.go_to_crypter);
-        button_go_to_crypter.setOnClickListener(onClickListener_go_to_other_activity);
+        button_go_to_crypter.setOnClickListener(onClickListenerToAnotherActivity);
 
         Button button_do_to_converter_numeration = findViewById(R.id.go_to_converter_numeration);
-        button_do_to_converter_numeration.setOnClickListener(onClickListener_go_to_other_activity);
+        button_do_to_converter_numeration.setOnClickListener(onClickListenerToAnotherActivity);
 
         Button button_do_to_root_search = findViewById(R.id.go_to_root_search);
-        button_do_to_root_search.setOnClickListener(onClickListener_go_to_other_activity);
+        button_do_to_root_search.setOnClickListener(onClickListenerToAnotherActivity);
 
         Button button_do_to_physical_converter = findViewById(R.id.go_to_physical_converter);
-        button_do_to_physical_converter.setOnClickListener(onClickListener_go_to_other_activity);
+        button_do_to_physical_converter.setOnClickListener(onClickListenerToAnotherActivity);
     }
 
 
@@ -53,7 +53,7 @@ public class ProgramsPage extends AppCompatActivity {
         }
     }
 
-    private final View.OnClickListener onClickListener_go_to_other_activity = new View.OnClickListener() {
+    private final View.OnClickListener onClickListenerToAnotherActivity = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             switch (v.getId()){

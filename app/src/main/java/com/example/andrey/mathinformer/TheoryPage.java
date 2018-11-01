@@ -27,7 +27,7 @@ public class TheoryPage extends AppCompatActivity {
         }
 
         String[] themes = new String[13]; // change number to enlarge list of themes
-        themes = set_strings(themes);
+        themes = setStrings(themes);
 
         ListView listView = (ListView)findViewById(R.id.list_test);
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, themes);
@@ -96,7 +96,7 @@ public class TheoryPage extends AppCompatActivity {
         }
     }
 
-    private String[] set_strings(String[] themes){
+    private String[] setStrings(String[] themes){
         themes[0] = "Введение";
         themes[1] = "Типы данных";
         themes[2] = "Операторы присваивания";
@@ -110,8 +110,6 @@ public class TheoryPage extends AppCompatActivity {
         themes[10] = "Методы";
         themes[11] = "Перегрузка методов";
         themes[12] = "Рекурсия";
-
-
         return themes;
     }
 }

@@ -15,22 +15,22 @@ public class MainPage extends AppCompatActivity {
         setContentView(R.layout.activity_main_page);
 
         Button button_to_ege = findViewById(R.id.button_to_ege);
-        button_to_ege.setOnClickListener(onClickListener_to_another_activity);
+        button_to_ege.setOnClickListener(onClickListenerToAnotherActivity);
 
         Button button_to_theory = findViewById(R.id.button_to_theory);
-        button_to_theory.setOnClickListener(onClickListener_to_another_activity);
+        button_to_theory.setOnClickListener(onClickListenerToAnotherActivity);
 
         Button button_to_tests = findViewById(R.id.button_to_tests);
-        button_to_tests.setOnClickListener(onClickListener_to_another_activity);
+        button_to_tests.setOnClickListener(onClickListenerToAnotherActivity);
 
         Button button_to_programs = findViewById(R.id.button_to_programs);
-        button_to_programs.setOnClickListener(onClickListener_to_another_activity);
+        button_to_programs.setOnClickListener(onClickListenerToAnotherActivity);
 
         Button button_to_about = findViewById(R.id.button_to_about);
-        button_to_about.setOnClickListener(onClickListener_to_another_activity);
+        button_to_about.setOnClickListener(onClickListenerToAnotherActivity);
     }
 
-    private final View.OnClickListener onClickListener_to_another_activity = new View.OnClickListener() {
+    private final View.OnClickListener onClickListenerToAnotherActivity = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             switch (v.getId()){

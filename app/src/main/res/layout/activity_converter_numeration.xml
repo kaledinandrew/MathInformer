@@ -50,6 +50,7 @@
         android:hint="@string/programs.converter.edit3"
         android:textAlignment="center"
         android:textSize="24sp"
+        android:inputType="number"
         tools:ignore="TextFields" />
 
     <Button

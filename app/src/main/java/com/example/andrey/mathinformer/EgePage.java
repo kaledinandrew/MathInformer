@@ -27,7 +27,7 @@ public class EgePage extends AppCompatActivity {
             actionBar.setTitle("Подготовка к ЕГЭ");
         }
 
-        themes = set_strings(themes);
+        themes = setStrings(themes);
 
         ListView listView = (ListView)findViewById(R.id.list_test);
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, themes);
@@ -137,7 +137,7 @@ public class EgePage extends AppCompatActivity {
         }
     }
 
-    private String[] set_strings(String[] themes){
+    private String[] setStrings(String[] themes){
         themes[0] = "1. Перевод систем счисления";
         themes[1] = "2. Таблицы истинности";
         themes[2] = "3. Анализ таблиц";

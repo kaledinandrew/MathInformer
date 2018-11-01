@@ -75,7 +75,7 @@ public class TestEasy extends AppCompatActivity {
         return score;
     }
 
-    public void WrongAnswers(View view){
+    public void wrongAnswers(View view){
         if (score() == 7) {
             Toast toast = Toast.makeText(getApplicationContext(),
                     "Все ответы верны", Toast.LENGTH_LONG);
@@ -83,11 +83,11 @@ public class TestEasy extends AppCompatActivity {
         }
         else {
             Toast toast = Toast.makeText(getApplicationContext(),
-                    "Неверные ответы:" + WrongNumbers(), Toast.LENGTH_LONG);
+                    "Неверные ответы:" + wrongNumbers(), Toast.LENGTH_LONG);
             toast.show();
         }
     }
-    private String WrongNumbers(){
+    private String wrongNumbers(){
         String answers = "";
         if (!rb_q1.isChecked()) answers += " 1";
         if (!rb_q2.isChecked()) answers += " 2";

@@ -44,7 +44,7 @@ public class RootSearch extends AppCompatActivity {
         }
     }
 
-    public final void find_root(View view){
+    public final void findRoot(View view){
         Double A=0.0, B=0.0, C=0.0, D;
         String str_result, A_string, B_string, C_string;
         A_string = input_A.getText().toString().replace(',', '.');
